@@ -33,7 +33,7 @@ Example usage in script:
 import WienerLinien from 'wili';
 
 // API key can be omitted when process.env.WIENER_LINIEN_API_KEY is set
-const wl = new WienerLinien(*API_KEY*);
+const wl = new WienerLinien(API_KEY);
 
 wl.trafficInfoList({ relatedLine: ['U2', 'U4', 'U6'] })
 .then( data => {
@@ -71,7 +71,7 @@ Usage: `newsList(options)`
 
 Returns news, elevator maintenance and other information
 
-#### Parameters
+#### Options
 
 ##### `options.relatedLine`
 
@@ -97,7 +97,7 @@ Usage: `trafficInfoList([options])`
 
 Returns interruption of operations and elevator outage
 
-#### Parameters
+#### Options
 
 ##### `options.relatedLine`
 

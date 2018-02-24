@@ -53,7 +53,7 @@ export default class WienerLinien {
    * @param {Object} [options] - optional arguments
    * @returns {Object} - JSON
    */
-  monitor(rbl: number|string|number[]|string[], options: ActiveTrafficInfo) {
+  monitor(rbl: number|string|number[]|string[], options: ActiveTrafficInfo = {}) {
     this.reqUrl = `${this.baseUrl}/monitor?sender=${this.API_KEY}`;
     this.reqUrl += buildUrl('rbl', rbl);
 
@@ -69,7 +69,7 @@ export default class WienerLinien {
    * @param {Object} [options] - optional arguments
    * @returns {Object} - JSON
    */
-  newsList(options: NewsList) {
+  newsList(options: NewsList = {}) {
     this.reqUrl = `${this.baseUrl}/newsList?sender=${this.API_KEY}`;
 
     if (typeof options.relatedLine !== 'undefined') {
@@ -92,7 +92,7 @@ export default class WienerLinien {
    * @param {Object} [options] - optional arguments
    * @returns {Object} - JSON
    */
-  trafficInfoList(options: TrafficInfo) {
+  trafficInfoList(options: TrafficInfo = {}) {
     this.reqUrl = `${this.baseUrl}/trafficInfoList?sender=${this.API_KEY}`;
 
     if (typeof options.relatedLine !== 'undefined') {

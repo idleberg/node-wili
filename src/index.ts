@@ -37,7 +37,7 @@ let callAPI = (url: string) => {
   });
 };
 
-export class WienerLinien {
+export default class WienerLinien {
   API_KEY: string;
   baseUrl: string;
   reqUrl: string;

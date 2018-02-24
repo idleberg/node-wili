@@ -9,6 +9,5 @@ yarn-error.log
 
 # project specific
 *.map
-test.js
-test.ts
+test/
 todo.md

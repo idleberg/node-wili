@@ -1,4 +1,18 @@
+# dependencies
+bower_components/
+node_modules/
+vendor/
+
+# package manager files
+npm-debug.log*
+yarn-error.log
+
+# project specific
+*.map
 .editorconfig
 .travis.yml
 tsconfig.json
 tslint.json
+test.js
+test.ts
+todo.md

@@ -1,0 +1,32 @@
+{
+  "name": "wili",
+  "version": "0.0.0",
+  "description": "A Node client for the Wiener Linien public transport API",
+  "private": true,
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/idleberg/node-wili.git"
+  },
+  "scripts": {
+    "build": "tsc --project ./",
+    "test": "tslint --project ./"
+  },
+  "keywords": [
+    "wiener linien",
+    "wienerlinien",
+    "vienna",
+    "opvn",
+    "public transport"
+  ],
+  "author": "Jan T. Sott",
+  "license": "MIT",
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^9.4.6",
+    "tslint": "^5.9.1",
+    "typescript": "^2.7.2"
+  }
+}

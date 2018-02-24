@@ -1,0 +1,1482 @@
+[
+  {
+    "LINIEN_ID": 214433717,
+    "BEZEICHNUNG": "D",
+    "REIHENFOLGE": 10,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptTram",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433953,
+    "BEZEICHNUNG": "N20",
+    "REIHENFOLGE": 320,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusNight",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433955,
+    "BEZEICHNUNG": "N23",
+    "REIHENFOLGE": 323,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusNight",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433957,
+    "BEZEICHNUNG": "N25",
+    "REIHENFOLGE": 325,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusNight",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433961,
+    "BEZEICHNUNG": "N26",
+    "REIHENFOLGE": 326,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusNight",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433963,
+    "BEZEICHNUNG": "N29",
+    "REIHENFOLGE": 329,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusNight",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433965,
+    "BEZEICHNUNG": "N31",
+    "REIHENFOLGE": 331,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusNight",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433967,
+    "BEZEICHNUNG": "N35",
+    "REIHENFOLGE": 335,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusNight",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433969,
+    "BEZEICHNUNG": "N38",
+    "REIHENFOLGE": 338,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusNight",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433971,
+    "BEZEICHNUNG": "N41",
+    "REIHENFOLGE": 341,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusNight",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433973,
+    "BEZEICHNUNG": "N43",
+    "REIHENFOLGE": 343,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusNight",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433975,
+    "BEZEICHNUNG": "N46",
+    "REIHENFOLGE": 346,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusNight",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433977,
+    "BEZEICHNUNG": "N49",
+    "REIHENFOLGE": 349,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusNight",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433951,
+    "BEZEICHNUNG": "N6",
+    "REIHENFOLGE": 306,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusNight",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433979,
+    "BEZEICHNUNG": "N60",
+    "REIHENFOLGE": 360,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusNight",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433981,
+    "BEZEICHNUNG": "N62",
+    "REIHENFOLGE": 362,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusNight",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433983,
+    "BEZEICHNUNG": "N64",
+    "REIHENFOLGE": 364,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusNight",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433985,
+    "BEZEICHNUNG": "N66",
+    "REIHENFOLGE": 365,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusNight",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433987,
+    "BEZEICHNUNG": "N67",
+    "REIHENFOLGE": 367,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusNight",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433989,
+    "BEZEICHNUNG": "N71",
+    "REIHENFOLGE": 371,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusNight",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433991,
+    "BEZEICHNUNG": "N75",
+    "REIHENFOLGE": 375,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusNight",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433721,
+    "BEZEICHNUNG": "O",
+    "REIHENFOLGE": 11,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptTram",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214432066,
+    "BEZEICHNUNG": "S1",
+    "REIHENFOLGE": 400,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptTrainS",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214432069,
+    "BEZEICHNUNG": "S2",
+    "REIHENFOLGE": 401,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptTrainS",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214432071,
+    "BEZEICHNUNG": "S3",
+    "REIHENFOLGE": 402,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptTrainS",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 221362332,
+    "BEZEICHNUNG": "S4",
+    "REIHENFOLGE": 404,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptTrainS",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214432201,
+    "BEZEICHNUNG": "S40",
+    "REIHENFOLGE": 408,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptTrainS",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214432203,
+    "BEZEICHNUNG": "S45",
+    "REIHENFOLGE": 409,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptTrainS",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214432205,
+    "BEZEICHNUNG": "S50",
+    "REIHENFOLGE": 410,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptTrainS",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214432207,
+    "BEZEICHNUNG": "S60",
+    "REIHENFOLGE": 411,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptTrainS",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214432077,
+    "BEZEICHNUNG": "S7",
+    "REIHENFOLGE": 405,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptTrainS",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214432209,
+    "BEZEICHNUNG": "S80",
+    "REIHENFOLGE": 412,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptTrainS",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433687,
+    "BEZEICHNUNG": "U1",
+    "REIHENFOLGE": 1,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptMetro",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433689,
+    "BEZEICHNUNG": "U2",
+    "REIHENFOLGE": 2,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptMetro",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433691,
+    "BEZEICHNUNG": "U3",
+    "REIHENFOLGE": 3,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptMetro",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433693,
+    "BEZEICHNUNG": "U4",
+    "REIHENFOLGE": 4,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptMetro",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433695,
+    "BEZEICHNUNG": "U6",
+    "REIHENFOLGE": 5,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptMetro",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 219528647,
+    "BEZEICHNUNG": "VRT",
+    "REIHENFOLGE": 0,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptTramVRT",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 219434256,
+    "BEZEICHNUNG": "WLB",
+    "REIHENFOLGE": 0,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptTramWLB",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433697,
+    "BEZEICHNUNG": 1,
+    "REIHENFOLGE": 12,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptTram",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214432883,
+    "BEZEICHNUNG": 1,
+    "REIHENFOLGE": 600,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433787,
+    "BEZEICHNUNG": "1A",
+    "REIHENFOLGE": 100,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214432881,
+    "BEZEICHNUNG": 10,
+    "REIHENFOLGE": 610,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433723,
+    "BEZEICHNUNG": 10,
+    "REIHENFOLGE": 17,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptTram",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433809,
+    "BEZEICHNUNG": "10A",
+    "REIHENFOLGE": 111,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214579027,
+    "BEZEICHNUNG": 11,
+    "REIHENFOLGE": 611,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433811,
+    "BEZEICHNUNG": "11A",
+    "REIHENFOLGE": 112,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433813,
+    "BEZEICHNUNG": "11B",
+    "REIHENFOLGE": 113,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433815,
+    "BEZEICHNUNG": "12A",
+    "REIHENFOLGE": 114,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433817,
+    "BEZEICHNUNG": "13A",
+    "REIHENFOLGE": 115,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433821,
+    "BEZEICHNUNG": "14A",
+    "REIHENFOLGE": 116,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433823,
+    "BEZEICHNUNG": "15A",
+    "REIHENFOLGE": 117,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433827,
+    "BEZEICHNUNG": "16A",
+    "REIHENFOLGE": 118,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433829,
+    "BEZEICHNUNG": "17A",
+    "REIHENFOLGE": 119,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433727,
+    "BEZEICHNUNG": 18,
+    "REIHENFOLGE": 18,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptTram",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433831,
+    "BEZEICHNUNG": "19A",
+    "REIHENFOLGE": 120,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214432885,
+    "BEZEICHNUNG": 2,
+    "REIHENFOLGE": 601,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433701,
+    "BEZEICHNUNG": 2,
+    "REIHENFOLGE": 13,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptTram",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433789,
+    "BEZEICHNUNG": "2A",
+    "REIHENFOLGE": 101,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 219364982,
+    "BEZEICHNUNG": "20A",
+    "REIHENFOLGE": 121,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 227070229,
+    "BEZEICHNUNG": "20B",
+    "REIHENFOLGE": 122,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 215038489,
+    "BEZEICHNUNG": "22A",
+    "REIHENFOLGE": 123,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433835,
+    "BEZEICHNUNG": "24A",
+    "REIHENFOLGE": 124,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214578207,
+    "BEZEICHNUNG": 25,
+    "REIHENFOLGE": 25,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptTram",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433837,
+    "BEZEICHNUNG": "25A",
+    "REIHENFOLGE": 125,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433731,
+    "BEZEICHNUNG": 26,
+    "REIHENFOLGE": 26,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptTram",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 228181845,
+    "BEZEICHNUNG": "26A",
+    "REIHENFOLGE": 126,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433841,
+    "BEZEICHNUNG": "27A",
+    "REIHENFOLGE": 127,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433843,
+    "BEZEICHNUNG": "28A",
+    "REIHENFOLGE": 128,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433845,
+    "BEZEICHNUNG": "29A",
+    "REIHENFOLGE": 129,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214432887,
+    "BEZEICHNUNG": 3,
+    "REIHENFOLGE": 602,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433791,
+    "BEZEICHNUNG": "3A",
+    "REIHENFOLGE": 103,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433733,
+    "BEZEICHNUNG": 30,
+    "REIHENFOLGE": 30,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptTram",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433847,
+    "BEZEICHNUNG": "30A",
+    "REIHENFOLGE": 130,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433735,
+    "BEZEICHNUNG": 31,
+    "REIHENFOLGE": 31,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptTram",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433849,
+    "BEZEICHNUNG": "31A",
+    "REIHENFOLGE": 131,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433851,
+    "BEZEICHNUNG": "32A",
+    "REIHENFOLGE": 132,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433737,
+    "BEZEICHNUNG": 33,
+    "REIHENFOLGE": 33,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptTram",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433855,
+    "BEZEICHNUNG": "33A",
+    "REIHENFOLGE": 133,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433859,
+    "BEZEICHNUNG": "35A",
+    "REIHENFOLGE": 135,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433861,
+    "BEZEICHNUNG": "36A",
+    "REIHENFOLGE": 136,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433741,
+    "BEZEICHNUNG": 37,
+    "REIHENFOLGE": 37,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptTram",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433863,
+    "BEZEICHNUNG": "37A",
+    "REIHENFOLGE": 137,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433743,
+    "BEZEICHNUNG": 38,
+    "REIHENFOLGE": 38,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptTram",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433865,
+    "BEZEICHNUNG": "38A",
+    "REIHENFOLGE": 138,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433867,
+    "BEZEICHNUNG": "39A",
+    "REIHENFOLGE": 139,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214432889,
+    "BEZEICHNUNG": 4,
+    "REIHENFOLGE": 603,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433793,
+    "BEZEICHNUNG": "4A",
+    "REIHENFOLGE": 104,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433747,
+    "BEZEICHNUNG": 40,
+    "REIHENFOLGE": 40,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptTram",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433869,
+    "BEZEICHNUNG": "40A",
+    "REIHENFOLGE": 140,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433751,
+    "BEZEICHNUNG": 41,
+    "REIHENFOLGE": 41,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptTram",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433873,
+    "BEZEICHNUNG": "41A",
+    "REIHENFOLGE": 141,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433755,
+    "BEZEICHNUNG": 42,
+    "REIHENFOLGE": 42,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptTram",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433875,
+    "BEZEICHNUNG": "42A",
+    "REIHENFOLGE": 142,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433759,
+    "BEZEICHNUNG": 43,
+    "REIHENFOLGE": 43,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptTram",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433877,
+    "BEZEICHNUNG": "43A",
+    "REIHENFOLGE": 143,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214537132,
+    "BEZEICHNUNG": "43B",
+    "REIHENFOLGE": 144,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433761,
+    "BEZEICHNUNG": 44,
+    "REIHENFOLGE": 44,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptTram",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 219364814,
+    "BEZEICHNUNG": "44A",
+    "REIHENFOLGE": 145,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 219364775,
+    "BEZEICHNUNG": "45A",
+    "REIHENFOLGE": 146,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433765,
+    "BEZEICHNUNG": 46,
+    "REIHENFOLGE": 46,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptTram",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 219364713,
+    "BEZEICHNUNG": "46A",
+    "REIHENFOLGE": 147,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 219364886,
+    "BEZEICHNUNG": "46B",
+    "REIHENFOLGE": 148,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433879,
+    "BEZEICHNUNG": "47A",
+    "REIHENFOLGE": 149,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214578163,
+    "BEZEICHNUNG": "47B",
+    "REIHENFOLGE": 150,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433881,
+    "BEZEICHNUNG": "48A",
+    "REIHENFOLGE": 151,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433767,
+    "BEZEICHNUNG": 49,
+    "REIHENFOLGE": 49,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptTram",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433883,
+    "BEZEICHNUNG": "49A",
+    "REIHENFOLGE": 152,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214432891,
+    "BEZEICHNUNG": 5,
+    "REIHENFOLGE": 604,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433705,
+    "BEZEICHNUNG": 5,
+    "REIHENFOLGE": 14,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptTram",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433795,
+    "BEZEICHNUNG": "5A",
+    "REIHENFOLGE": 105,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214536307,
+    "BEZEICHNUNG": "5B",
+    "REIHENFOLGE": 106,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 219849554,
+    "BEZEICHNUNG": "50A",
+    "REIHENFOLGE": 153,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433887,
+    "BEZEICHNUNG": "50B",
+    "REIHENFOLGE": 154,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433889,
+    "BEZEICHNUNG": "51A",
+    "REIHENFOLGE": 155,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433771,
+    "BEZEICHNUNG": 52,
+    "REIHENFOLGE": 52,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptTram",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433891,
+    "BEZEICHNUNG": "52A",
+    "REIHENFOLGE": 156,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433893,
+    "BEZEICHNUNG": "52B",
+    "REIHENFOLGE": 157,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 219365068,
+    "BEZEICHNUNG": "53A",
+    "REIHENFOLGE": 158,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 219364653,
+    "BEZEICHNUNG": "54A",
+    "REIHENFOLGE": 159,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 219365118,
+    "BEZEICHNUNG": "54B",
+    "REIHENFOLGE": 160,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 219364946,
+    "BEZEICHNUNG": "55A",
+    "REIHENFOLGE": 161,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 219187213,
+    "BEZEICHNUNG": "56A",
+    "REIHENFOLGE": 162,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 219187315,
+    "BEZEICHNUNG": "56B",
+    "REIHENFOLGE": 163,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433895,
+    "BEZEICHNUNG": "57A",
+    "REIHENFOLGE": 164,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 219187420,
+    "BEZEICHNUNG": "58A",
+    "REIHENFOLGE": 165,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433897,
+    "BEZEICHNUNG": "59A",
+    "REIHENFOLGE": 166,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214432893,
+    "BEZEICHNUNG": 6,
+    "REIHENFOLGE": 605,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433709,
+    "BEZEICHNUNG": 6,
+    "REIHENFOLGE": 15,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptTram",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433777,
+    "BEZEICHNUNG": 60,
+    "REIHENFOLGE": 60,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptTram",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433903,
+    "BEZEICHNUNG": "60A",
+    "REIHENFOLGE": 167,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214789003,
+    "BEZEICHNUNG": "61A",
+    "REIHENFOLGE": 168,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433781,
+    "BEZEICHNUNG": 62,
+    "REIHENFOLGE": 62,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptTram",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433905,
+    "BEZEICHNUNG": "62A",
+    "REIHENFOLGE": 169,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433909,
+    "BEZEICHNUNG": "63A",
+    "REIHENFOLGE": 170,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433911,
+    "BEZEICHNUNG": "64A",
+    "REIHENFOLGE": 171,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433913,
+    "BEZEICHNUNG": "65A",
+    "REIHENFOLGE": 172,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433915,
+    "BEZEICHNUNG": "66A",
+    "REIHENFOLGE": 173,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433783,
+    "BEZEICHNUNG": 67,
+    "REIHENFOLGE": 67,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptTram",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433917,
+    "BEZEICHNUNG": "67A",
+    "REIHENFOLGE": 174,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 231225732,
+    "BEZEICHNUNG": "67B",
+    "REIHENFOLGE": 175,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433919,
+    "BEZEICHNUNG": "68A",
+    "REIHENFOLGE": 176,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 218727201,
+    "BEZEICHNUNG": "68B",
+    "REIHENFOLGE": 177,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433921,
+    "BEZEICHNUNG": "69A",
+    "REIHENFOLGE": 178,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214432895,
+    "BEZEICHNUNG": 7,
+    "REIHENFOLGE": 606,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433797,
+    "BEZEICHNUNG": "7A",
+    "REIHENFOLGE": 107,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433801,
+    "BEZEICHNUNG": "7B",
+    "REIHENFOLGE": 108,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433923,
+    "BEZEICHNUNG": "70A",
+    "REIHENFOLGE": 179,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 215281204,
+    "BEZEICHNUNG": 71,
+    "REIHENFOLGE": 71,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptTram",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214536988,
+    "BEZEICHNUNG": "71A",
+    "REIHENFOLGE": 180,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 233194076,
+    "BEZEICHNUNG": "71B",
+    "REIHENFOLGE": 181,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433925,
+    "BEZEICHNUNG": "72A",
+    "REIHENFOLGE": 181,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433927,
+    "BEZEICHNUNG": "73A",
+    "REIHENFOLGE": 182,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433929,
+    "BEZEICHNUNG": "74A",
+    "REIHENFOLGE": 183,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433931,
+    "BEZEICHNUNG": "76A",
+    "REIHENFOLGE": 184,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 230831064,
+    "BEZEICHNUNG": "76B",
+    "REIHENFOLGE": 185,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433933,
+    "BEZEICHNUNG": "77A",
+    "REIHENFOLGE": 185,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 218957255,
+    "BEZEICHNUNG": "79A",
+    "REIHENFOLGE": 186,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214473227,
+    "BEZEICHNUNG": "79B",
+    "REIHENFOLGE": 187,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214432897,
+    "BEZEICHNUNG": 8,
+    "REIHENFOLGE": 607,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433803,
+    "BEZEICHNUNG": "8A",
+    "REIHENFOLGE": 109,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433935,
+    "BEZEICHNUNG": "80A",
+    "REIHENFOLGE": 188,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 215282630,
+    "BEZEICHNUNG": "82A",
+    "REIHENFOLGE": 189,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 215096034,
+    "BEZEICHNUNG": "84A",
+    "REIHENFOLGE": 190,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 215096036,
+    "BEZEICHNUNG": "85A",
+    "REIHENFOLGE": 191,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433939,
+    "BEZEICHNUNG": "86A",
+    "REIHENFOLGE": 192,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433941,
+    "BEZEICHNUNG": "87A",
+    "REIHENFOLGE": 193,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433943,
+    "BEZEICHNUNG": "88A",
+    "REIHENFOLGE": 194,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 215096144,
+    "BEZEICHNUNG": "88B",
+    "REIHENFOLGE": 195,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433947,
+    "BEZEICHNUNG": "89A",
+    "REIHENFOLGE": 196,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214432899,
+    "BEZEICHNUNG": 9,
+    "REIHENFOLGE": 608,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433713,
+    "BEZEICHNUNG": 9,
+    "REIHENFOLGE": 16,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptTram",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214433807,
+    "BEZEICHNUNG": "9A",
+    "REIHENFOLGE": 110,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214579075,
+    "BEZEICHNUNG": "9A",
+    "REIHENFOLGE": 609,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214434095,
+    "BEZEICHNUNG": "92A",
+    "REIHENFOLGE": 197,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214578059,
+    "BEZEICHNUNG": "92B",
+    "REIHENFOLGE": 198,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214434097,
+    "BEZEICHNUNG": "93A",
+    "REIHENFOLGE": 199,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214434101,
+    "BEZEICHNUNG": "94A",
+    "REIHENFOLGE": 200,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 215096434,
+    "BEZEICHNUNG": "95A",
+    "REIHENFOLGE": 201,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214789127,
+    "BEZEICHNUNG": "95B",
+    "REIHENFOLGE": 202,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 215096386,
+    "BEZEICHNUNG": "96A",
+    "REIHENFOLGE": 203,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214434109,
+    "BEZEICHNUNG": "97A",
+    "REIHENFOLGE": 204,
+    "ECHTZEIT": 1,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 227648933,
+    "BEZEICHNUNG": "98A",
+    "REIHENFOLGE": 205,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 215096838,
+    "BEZEICHNUNG": "99A",
+    "REIHENFOLGE": 206,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  },
+  {
+    "LINIEN_ID": 214434113,
+    "BEZEICHNUNG": "99B",
+    "REIHENFOLGE": 207,
+    "ECHTZEIT": 0,
+    "VERKEHRSMITTEL": "ptBusCity",
+    "STAND": ""
+  }
+]

@@ -1,6 +1,6 @@
 {
   "name": "wili",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A Node client for the Wiener Linien public transport API",
   "main": "lib/index.js",
   "repository": {

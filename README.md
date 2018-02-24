@@ -3,6 +3,7 @@
 [![npm](https://img.shields.io/npm/l/wili.svg?style=flat-square)](https://www.npmjs.org/package/wili)
 [![npm](https://img.shields.io/npm/v/wili.svg?style=flat-square)](https://www.npmjs.org/package/wili)
 [![Travis](https://img.shields.io/travis/idleberg/node-wili.svg?style=flat-square)](https://travis-ci.org/idleberg/node-wili)
+[![David](https://img.shields.io/david/idleberg/node-wili.svg?style=flat-square)](https://david-dm.org/idleberg/node-wili)
 [![David](https://img.shields.io/david/dev/idleberg/node-wili.svg?style=flat-square)](https://david-dm.org/idleberg/node-wili?type=dev)
 
 A Node client for the Wiener Linien public transport API

@@ -57,7 +57,7 @@ export default class WienerLinien {
     this.reqUrl = `${this.baseUrl}/monitor?sender=${this.API_KEY}`;
     this.reqUrl += buildUrl('rbl', rbl);
 
-    if (typeof options.activateTrafficInfo !== 'undefined') {
+    if (typeof options.activateTrafficInfo !== 'undefined' && options.activateTrafficInfo) {
       this.reqUrl += buildUrl('activateTrafficInfo', options.activateTrafficInfo);
     }
 
@@ -72,15 +72,15 @@ export default class WienerLinien {
   newsList(options: NewsList = {}) {
     this.reqUrl = `${this.baseUrl}/newsList?sender=${this.API_KEY}`;
 
-    if (typeof options.relatedLine !== 'undefined') {
+    if (typeof options.relatedLine !== 'undefined' && options.relatedLine) {
       this.reqUrl += buildUrl('relatedLine', options.relatedLine);
     }
 
-    if (typeof options.relatedStop !== 'undefined') {
+    if (typeof options.relatedStop !== 'undefined' && options.relatedStop) {
       this.reqUrl += buildUrl('relatedStop', options.relatedStop);
     }
 
-    if (typeof options.name !== 'undefined') {
+    if (typeof options.name !== 'undefined' && options.name) {
       this.reqUrl += buildUrl('name', options.name);
     }
 
@@ -95,15 +95,15 @@ export default class WienerLinien {
   trafficInfoList(options: TrafficInfo = {}) {
     this.reqUrl = `${this.baseUrl}/trafficInfoList?sender=${this.API_KEY}`;
 
-    if (typeof options.relatedLine !== 'undefined') {
+    if (typeof options.relatedLine !== 'undefined' && options.relatedLine) {
       this.reqUrl += buildUrl('relatedLine', options.relatedLine);
     }
 
-    if (typeof options.relatedStop !== 'undefined') {
+    if (typeof options.relatedStop !== 'undefined' && options.relatedStop) {
       this.reqUrl += buildUrl('relatedStop', options.relatedStop);
     }
 
-    if (typeof options.name !== 'undefined') {
+    if (typeof options.name !== 'undefined' && options.name) {
       this.reqUrl += buildUrl('name', options.name);
     }
 

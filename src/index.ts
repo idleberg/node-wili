@@ -17,6 +17,7 @@ let buildUrl = (key: string, input: Object): string => {
     let reqUrl = '';
 
     input.forEach( r => {
+      r = (typeof r === 'string') ? r.toUpperCase() : r;
       reqUrl += `&${key}=${r}`;
     });
 

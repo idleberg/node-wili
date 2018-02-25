@@ -69,7 +69,7 @@ export default class WienerLinien {
    * @param {Object} [options] - optional arguments
    * @returns {Object} - JSON
    */
-  newsList(options: NewsList = {}) {
+  newsList(options: RelatedInfo = {}) {
     this.reqUrl = `${this.baseUrl}/newsList?sender=${this.API_KEY}`;
 
     if (typeof options.relatedLine !== 'undefined' && options.relatedLine) {
@@ -92,7 +92,7 @@ export default class WienerLinien {
    * @param {Object} [options] - optional arguments
    * @returns {Object} - JSON
    */
-  trafficInfoList(options: TrafficInfo = {}) {
+  trafficInfoList(options: RelatedInfo = {}) {
     this.reqUrl = `${this.baseUrl}/trafficInfoList?sender=${this.API_KEY}`;
 
     if (typeof options.relatedLine !== 'undefined' && options.relatedLine) {

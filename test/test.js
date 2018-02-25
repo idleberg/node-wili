@@ -1,7 +1,5 @@
 // Dependencies
 import WienerLinien from '../lib/index';
-import { spawnSync } from 'child_process';
-import { platform } from 'os';
 import { test } from 'ava';
 
 const wl = new WienerLinien();

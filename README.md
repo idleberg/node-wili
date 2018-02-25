@@ -58,7 +58,7 @@ Returns real-time data for a station, including train information such as identi
 
 Type: `String`, `Integer`, `Array`
 
-RBL Number (Rechnergestütztes Betriebsleitsystem - computer-aided operations control system)
+RBL number (Rechnergestütztes Betriebsleitsystem - computer-aided operations control system), can be found this [website](https://till.mabe.at/rbl/?line=214433687&station=231116899)
 
 ##### `options.activeTrafficInfo`
 

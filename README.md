@@ -6,7 +6,7 @@
 [![David](https://img.shields.io/david/idleberg/node-wili.svg?style=flat-square)](https://david-dm.org/idleberg/node-wili)
 [![David](https://img.shields.io/david/dev/idleberg/node-wili.svg?style=flat-square)](https://david-dm.org/idleberg/node-wili?type=dev)
 
-A Node client for the Wiener Linien public transport API
+A Node wrapper for the Wiener Linien public transport API
 
 ## Installation
 

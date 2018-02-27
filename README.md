@@ -12,7 +12,7 @@ A Node client for the Wiener Linien public transport API
 
 `yarn add wili || npm install wili`
 
-## Requisites
+## Prerequisites
 
 You will need a valid API key to access Wiener Linien's real-time data, get it [here](https://www.wien.gv.at/formularserver2/user/formular.aspx?pid=3b49a23de1ff43efbc45ae85faee31db&pn=B0718725a79fb40f4bb4b7e0d2d49f1d1). 
 

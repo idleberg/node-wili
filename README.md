@@ -78,7 +78,7 @@ Returns news, elevator maintenance and other information
 
 Type: `String`, `Integer`, `Array`
 
-Train or bus number, e.g. U1, S7, 59A
+Train or bus number, e.g. U1, S7, 59A (case-insensitive)
 
 ##### `options.relatedStop`
 

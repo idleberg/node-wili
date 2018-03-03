@@ -12,7 +12,7 @@ test('Found environmental variable WIENER_LINIEN_API_KEY', t => {
   t.not(actual, expected);
 });
 
-test('monitor() returns monitors', t => {
+test('monitor() returns "monitors"', t => {
   return Promise.resolve(wl.monitor([4111, 4118, 4202, 4213, 4429, 4408]))
     .then(data => {
       const expected = true;
@@ -23,7 +23,7 @@ test('monitor() returns monitors', t => {
     .catch();
 });
 
-test('newsList() returns monitors (relatedLine)', t => {
+test('newsList() returns "monitors" (relatedLine)', t => {
   return Promise.resolve(wl.newsList({ relatedLine: ['U1', 'U2', 'U3', 'U4', 'U5', 'U6'] }))
     .then(data => {
       const expected = true;
@@ -34,7 +34,7 @@ test('newsList() returns monitors (relatedLine)', t => {
     .catch();
 });
 
-test('newsList() returns pois (relatedStop)', t => {
+test('newsList() returns "pois" (relatedStop)', t => {
   return Promise.resolve(wl.newsList({ relatedStop: [304, 834] }))
     .then(data => {
       const expected = true;
@@ -45,7 +45,7 @@ test('newsList() returns pois (relatedStop)', t => {
     .catch();
 });
 
-test('trafficInfoList() returns trafficInfos (relatedLine)', t => {
+test('trafficInfoList() returns "trafficInfos" (relatedLine)', t => {
   return Promise.resolve(wl.trafficInfoList({ relatedLine: ['U1', 'U2', 'U3', 'U4', 'U5', 'U6'] }))
     .then(data => {
       const expected = true;
@@ -56,7 +56,7 @@ test('trafficInfoList() returns trafficInfos (relatedLine)', t => {
     .catch();
 });
 
-test('trafficInfoList() returns trafficInfos', t => {
+test('trafficInfoList() returns "trafficInfos"', t => {
   return Promise.resolve(wl.trafficInfoList())
     .then(data => {
       const expected = true;

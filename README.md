@@ -33,10 +33,9 @@ Example usage in script:
 ```js
 import WienerLinien from 'wili';
 
-/*
- * The API key can be omitted when
- * process.env.WIENER_LINIEN_API_KEY is set
- */
+
+// The API key can be omitted when
+// process.env.WIENER_LINIEN_API_KEY is set
 const wl = new WienerLinien(API_KEY);
 
 wl.trafficInfoList({ relatedLine: ['U2', 'U4', 'U6'] })

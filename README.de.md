@@ -18,7 +18,7 @@ Ein gültiger API Key wird vorausgesetzt, [hier](https://www.wien.gv.at/formular
 
 ## Verwendung
 
-Verwende ES6 Imports oder `require()` um das Module zu importieren:
+Das Modul lässt sich per ES6 Imports oder `require()` importieren:
 
 ```js
 // ECMAScript Import

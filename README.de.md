@@ -16,7 +16,7 @@ Node Wrapper für das Echtzeitdaten API der Wiener Linien
 
 Ein gültiger API Key wird vorausgesetzt, [hier](https://www.wien.gv.at/formularserver2/user/formular.aspx?pid=3b49a23de1ff43efbc45ae85faee31db&pn=B0718725a79fb40f4bb4b7e0d2d49f1d1) kannst Du einen beantragen. 
 
-## Verwendung
+## Anwendung
 
 Das Modul lässt sich per ES6 Imports oder `require()` importieren:
 

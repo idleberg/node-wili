@@ -71,7 +71,7 @@ Störungstypen: `stoerungkurz`, `stoerunglang` oder `aufzugsinfo`
 
 Verwendung: `newsList(options)`
 
-Die Schnittstelle liefert Neuigkeiten wie "Aktuelles" oder "Aufzugswartungen"
+Die Schnittstelle liefert Neuigkeiten wie „Aktuelles“ oder „Aufzugswartungen”
 
 #### Optionen
 

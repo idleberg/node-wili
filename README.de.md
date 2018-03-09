@@ -59,7 +59,7 @@ Die Monitor Schnittstelle liefert Echtzeiten oder Planzeiten der nächsten 70 M
 
 Typen: `String`, `Integer`, `Array`
 
-RBL Nummer (Rechnergestütztes Betriebsleitsystem), lässt man [hier](https://till.mabe.at/rbl/?line=214433687&station=231116899) abfragen
+RBL Nummer (Rechnergestütztes Betriebsleitsystem), lässt sich [hier](https://till.mabe.at/rbl/?line=214433687&station=231116899) abfragen
 
 ##### `options.activeTrafficInfo`
 

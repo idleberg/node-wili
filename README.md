@@ -6,6 +6,8 @@
 [![David](https://img.shields.io/david/idleberg/node-wili.svg?style=flat-square)](https://david-dm.org/idleberg/node-wili)
 [![David](https://img.shields.io/david/dev/idleberg/node-wili.svg?style=flat-square)](https://david-dm.org/idleberg/node-wili?type=dev)
 
+**English** | [Deutsch](README.de.md)
+
 A Node wrapper for the Wiener Linien public transport API
 
 ## Installation
@@ -33,15 +35,13 @@ Example usage in script:
 ```js
 import WienerLinien from 'wili';
 
-/*
- * The API key can be omitted when
- * process.env.WIENER_LINIEN_API_KEY is set
- */
+// The API key can be omitted when
+// process.env.WIENER_LINIEN_API_KEY is set
 const wl = new WienerLinien(API_KEY);
 
 wl.trafficInfoList({ relatedLine: ['U2', 'U4', 'U6'] })
 .then( data => {
-    console.log(data.trafficInfos);
+  console.log(data.trafficInfos);
 }).catch( error => {
   console.error(error);
 });

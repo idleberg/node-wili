@@ -3,7 +3,7 @@ language: node_js
 node_js:
 - "node"
 - "lts/*"
-script: npm run lint
+script: npm test
 git:
   depth: 1
 branches:

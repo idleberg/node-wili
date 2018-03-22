@@ -4,7 +4,8 @@ import { test } from 'ava';
 
 const wl = new WienerLinien();
 
-// Let's run the tests
+// If you want to run any of these tests locally, keep in mind to set
+// a WIENER_LINIEN_API_KEY environmental variable containing a valid API key
 test('Found environmental variable WIENER_LINIEN_API_KEY', t => {
   const expected = undefined;
   const actual = process.env.WIENER_LINIEN_API_KEY;

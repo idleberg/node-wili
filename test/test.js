@@ -10,7 +10,7 @@ test('Found environmental variable WIENER_LINIEN_API_KEY', t => {
   const expected = undefined;
   const actual = process.env.WIENER_LINIEN_API_KEY;
 
-  t.not(actual, expected);
+  t.not(actual, expected, "You need define the environmental variable `WIENER_LINIEN_API_KEY` containing a valid Wiener Linien API key");
 });
 
 test('monitor() returns "monitors"', t => {

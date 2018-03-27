@@ -42,7 +42,8 @@ const wl = new WienerLinien(API_KEY);
 wl.trafficInfoList({ relatedLine: ['U2', 'U4', 'U6'] })
 .then( data => {
   console.log(data.trafficInfos);
-}).catch( error => {
+})
+.catch( error => {
   console.error(error);
 });
 ```

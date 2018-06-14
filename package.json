@@ -25,9 +25,9 @@
     "isomorphic-fetch": "^2.2.1"
   },
   "devDependencies": {
-    "@types/node": "^9.4.6",
+    "@types/node": "^10.3.2",
     "ava": "^0.25.0",
-    "tslint": "^5.9.1",
-    "typescript": "^2.7.2"
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.2"
   }
 }

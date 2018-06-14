@@ -1,18 +1,13 @@
-# dependencies
-bower_components/
-node_modules/
-vendor/
-
-# package manager files
-npm-debug.log*
-yarn-error.log
-
-# project specific
-*.map
+# Folders
+.circleci/
 .editorconfig
+src/
+test/
+types/
+
+# Files
+.gitignore
 .travis.yml
+gulpfile.js
 tsconfig.json
 tslint.json
-test.js
-test.ts
-todo.md

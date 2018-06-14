@@ -11,7 +11,7 @@
     "build": "tsc --project ./",
     "lint": "tslint --project ./",
     "prepublishOnly": "npm run lint && npm run test",
-    "test": "npm ava ./test/test.js --verbose --fail-fast"
+    "test": "npx ava ./test/test.js --verbose --fail-fast"
   },
   "keywords": [
     "wiener linien",

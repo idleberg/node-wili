@@ -2,7 +2,7 @@
 
 [![npm](https://flat.badgen.net/npm/license/wili)](https://www.npmjs.org/package/wili)
 [![npm](https://flat.badgen.net/npm/v/wili)](https://www.npmjs.org/package/wili)
-[![CircleCI](https://flat.badgen.net/circleci/project/idleberg/node-wili)](https://circleci.com/gh/idleberg/node-wili)
+[![CircleCI](https://flat.badgen.net/circleci/github/idleberg/node-wili)](https://circleci.com/gh/idleberg/node-wili)
 [![David](https://flat.badgen.net/david/dep/idleberg/node-wili)](https://david-dm.org/idleberg/node-wili)
 [![David](https://flat.badgen.net/david/dev/idleberg/node-wili)](https://david-dm.org/idleberg/node-wili?type=dev)
 

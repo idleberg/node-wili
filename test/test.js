@@ -1,6 +1,6 @@
 // Dependencies
 import WienerLinien from '../lib/index';
-import { test } from 'ava';
+import test from 'ava';
 
 const wl = new WienerLinien();
 

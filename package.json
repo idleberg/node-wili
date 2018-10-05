@@ -10,8 +10,7 @@
   "scripts": {
     "build": "tsc --project ./",
     "lint": "tslint --project ./",
-    "precommit": "npm run lint",
-    "prepublishOnly": "npm run lint && npm run test",
+    "precommit": "npm run lint && npm run test",
     "test": "npx ava ./test/test.js --verbose --fail-fast"
   },
   "keywords": [

@@ -39,8 +39,12 @@ import WienerLinien from 'wili';
 // process.env.WIENER_LINIEN_API_KEY gesetzt ist
 const wl = new WienerLinien(API_KEY);
 
+const options = {
+  relatedLine: ['U2', 'U4', 'U6']
+};
+
 // Promise API
-wl.trafficInfoList({ relatedLine: ['U2', 'U4', 'U6'] })
+wl.trafficInfoList(options)
 .then( data => {
   console.log(data.trafficInfos);
 })
@@ -51,7 +55,7 @@ wl.trafficInfoList({ relatedLine: ['U2', 'U4', 'U6'] })
 // async/await
 (async () => {
   try {
-    let data = await wl.trafficInfoList({ relatedLine: ['U2', 'U4', 'U6'] });
+    let data = await wl.trafficInfoList(options);
     console.log(data.trafficInfos);
   } catch (output) {
     console.error(error);

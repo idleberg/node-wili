@@ -7,6 +7,9 @@ vendor/
 npm-debug.log*
 yarn-error.log
 
+# Development
+tsconfig.tsbuildinfo
+
 # project specific
 *.map
 todo.md

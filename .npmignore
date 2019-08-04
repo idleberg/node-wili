@@ -12,6 +12,9 @@ gulpfile.js
 tsconfig.json
 tslint.json
 
+# Development
+tsconfig.tsbuildinfo
+
 # project specific
 *.map
 todo.md

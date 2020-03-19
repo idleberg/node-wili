@@ -28,10 +28,10 @@
     "query-string": "^6.11.1"
   },
   "devDependencies": {
-    "@types/node": "^12.12.18",
+    "@types/node": "^13.9.2",
     "ava": "^2.4.0",
-    "husky": "^3.1.0",
-    "tslint": "^5.20.1",
-    "typescript": "^3.7.3"
+    "husky": "^4.2.3",
+    "tslint": "^6.1.0",
+    "typescript": "^3.8.3"
   }
 }

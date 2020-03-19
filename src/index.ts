@@ -80,11 +80,11 @@ export default class WienerLinien {
     } else {
       return Promise.reject(new Error(response.statusText));
     }
-  };
+  }
 
   private parseJson (response: Response): Promise<Response> {
     return response.json();
-  };
+  }
 
   private callAPI(url: string) {
     return fetch(url)
@@ -92,5 +92,5 @@ export default class WienerLinien {
       .then(this.parseJson)
       .then(response => response.data)
       .catch(console.error);
-  };
+  }
 }

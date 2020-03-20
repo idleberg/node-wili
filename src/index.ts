@@ -4,8 +4,10 @@ import * as queryString from 'query-string';
 export default class WienerLinien {
   API_KEY: string;
 
-  constructor(API_KEY: string = '') {
-    this.API_KEY = API_KEY ? API_KEY : process.env.WIENER_LINIEN_API_KEY || '';
+  constructor(API_KEY: string | undefined = undefined) {
+    this.API_KEY = (API_KEY && API_KEY.length)
+      ? API_KEY
+      : process.env.WIENER_LINIEN_API_KEY2 || undefined;
   }
 
   /**

@@ -4,8 +4,8 @@ import * as queryString from 'query-string';
 export default class WienerLinien {
   API_KEY: string;
 
-  constructor(API_KEY: string = process.env.WIENER_LINIEN_API_KEY) {
-    this.API_KEY = API_KEY;
+  constructor(API_KEY: string = '') {
+    this.API_KEY = API_KEY ? API_KEY : process.env.WIENER_LINIEN_API_KEY || '';
   }
 
   /**
@@ -14,9 +14,8 @@ export default class WienerLinien {
    * @param {Object} [options] - optional arguments
    * @returns {Object} - JSON
    */
-  public monitor(rbl: number|string|number[]|string[], options: ActiveTrafficInfo = {}) {
-    const urlParams = {
-      sender: this.API_KEY,
+  public monitor(rbl: number | string | number[] | string[], options: MonitorOptions = {}) {
+    const urlParams: MonitorParams = {
       rbl: rbl,
     };
 
@@ -24,7 +23,10 @@ export default class WienerLinien {
       urlParams['activateTrafficInfo'] = options.activateTrafficInfo;
     }
 
-    // console.trace(urlParams)
+    if (this.API_KEY && this.API_KEY.trim().length) {
+      urlParams['sender'] = this.API_KEY;
+    }
+
     return this.apiCall('/monitor', urlParams);
   }
 
@@ -33,10 +35,8 @@ export default class WienerLinien {
    * @param {Object} [options] - optional arguments
    * @returns {Object} - JSON
    */
-  public newsList(options: RelatedInfo = {}) {
-    const urlParams = {
-      sender: this.API_KEY
-    };
+  public newsList(options: NewsListOptions = {}) {
+    const urlParams: NewsListParams = {};
 
     if (typeof options.relatedLine !== 'undefined' && options.relatedLine) {
       urlParams['relatedLine'] = options.relatedLine;
@@ -50,7 +50,10 @@ export default class WienerLinien {
       urlParams['name'] = options.name;
     }
 
-    // console.trace(urlParams)
+    if (this.API_KEY && this.API_KEY.trim().length) {
+      urlParams['sender'] = this.API_KEY;
+    }
+
     return this.apiCall('newsList', urlParams);
   }
 
@@ -59,10 +62,8 @@ export default class WienerLinien {
    * @param {Object} [options] - optional arguments
    * @returns {Object} - JSON
    */
-  public trafficInfoList(options: RelatedInfo = {}) {
-    const urlParams = {
-      sender: this.API_KEY
-    };
+  public trafficInfoList(options: TrafficInfoOptions = {}) {
+    const urlParams: TrafficInfoParams = {};
 
     if (typeof options.relatedLine !== 'undefined' && options.relatedLine) {
       urlParams['relatedLine'] = options.relatedLine;
@@ -76,7 +77,10 @@ export default class WienerLinien {
       urlParams['name'] = options.name;
     }
 
-    // console.trace(urlParams)
+    if (this.API_KEY && this.API_KEY.trim().length) {
+      urlParams['sender'] = this.API_KEY;
+    }
+
     return this.apiCall('trafficInfoList', urlParams);
   }
 
@@ -93,9 +97,9 @@ export default class WienerLinien {
   }
 
   private apiCall(urlPath, urlParams: object) {
-    const url = new URL('https://www.wienerlinien.at/ogd_realtime/');
+    const url = new URL('https://www.wienerlinien.at');
 
-    url.pathname += urlPath;
+    url.pathname = `/ogd_realtime/${urlPath}`;
     url.search = queryString.stringify(urlParams);
 
     return fetch(url.href)

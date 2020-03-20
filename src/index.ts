@@ -3,12 +3,9 @@ import * as queryString from 'query-string';
 
 export default class WienerLinien {
   API_KEY: string;
-  baseUrl: string;
-  reqUrl: string;
 
   constructor(API_KEY: string = process.env.WIENER_LINIEN_API_KEY) {
     this.API_KEY = API_KEY;
-    this.baseUrl = 'https://www.wienerlinien.at/ogd_realtime';
   }
 
   /**
@@ -18,14 +15,17 @@ export default class WienerLinien {
    * @returns {Object} - JSON
    */
   public monitor(rbl: number|string|number[]|string[], options: ActiveTrafficInfo = {}) {
-    this.reqUrl = `${this.baseUrl}/monitor?sender=${this.API_KEY}`;
-    this.reqUrl += queryString.stringify({rbl: rbl});
+    const urlParams = {
+      sender: this.API_KEY,
+      rbl: rbl,
+    };
 
     if (typeof options.activateTrafficInfo !== 'undefined' && options.activateTrafficInfo) {
-      this.reqUrl += queryString.stringify({activateTrafficInfo: options.activateTrafficInfo});
+      urlParams['activateTrafficInfo'] = options.activateTrafficInfo;
     }
 
-    return this.callAPI(this.reqUrl);
+    // console.trace(urlParams)
+    return this.apiCall('/monitor', urlParams);
   }
 
   /**
@@ -34,21 +34,24 @@ export default class WienerLinien {
    * @returns {Object} - JSON
    */
   public newsList(options: RelatedInfo = {}) {
-    this.reqUrl = `${this.baseUrl}/newsList?sender=${this.API_KEY}`;
+    const urlParams = {
+      sender: this.API_KEY
+    };
 
     if (typeof options.relatedLine !== 'undefined' && options.relatedLine) {
-      this.reqUrl += queryString.stringify({relatedLine: options.relatedLine});
+      urlParams['relatedLine'] = options.relatedLine;
     }
 
     if (typeof options.relatedStop !== 'undefined' && options.relatedStop) {
-      this.reqUrl += queryString.stringify({relatedStop: options.relatedStop});
+      urlParams['relatedStop'] = options.relatedStop;
     }
 
     if (typeof options.name !== 'undefined' && options.name) {
-      this.reqUrl += queryString.stringify({name: options.name});
+      urlParams['name'] = options.name;
     }
 
-    return this.callAPI(this.reqUrl);
+    // console.trace(urlParams)
+    return this.apiCall('newsList', urlParams);
   }
 
   /**
@@ -57,21 +60,24 @@ export default class WienerLinien {
    * @returns {Object} - JSON
    */
   public trafficInfoList(options: RelatedInfo = {}) {
-    this.reqUrl = `${this.baseUrl}/trafficInfoList?sender=${this.API_KEY}`;
+    const urlParams = {
+      sender: this.API_KEY
+    };
 
     if (typeof options.relatedLine !== 'undefined' && options.relatedLine) {
-      this.reqUrl += queryString.stringify({relatedLine: options.relatedLine});
+      urlParams['relatedLine'] = options.relatedLine;
     }
 
     if (typeof options.relatedStop !== 'undefined' && options.relatedStop) {
-      this.reqUrl += queryString.stringify({relatedStop: options.relatedStop});
+      urlParams['relatedStop'] = options.relatedStop;
     }
 
     if (typeof options.name !== 'undefined' && options.name) {
-      this.reqUrl += queryString.stringify({name: options.name});
+      urlParams['name'] = options.name;
     }
 
-    return this.callAPI(this.reqUrl);
+    // console.trace(urlParams)
+    return this.apiCall('trafficInfoList', urlParams);
   }
 
   private checkStatus(response: Response): Promise<Response> {
@@ -86,8 +92,13 @@ export default class WienerLinien {
     return response.json();
   }
 
-  private callAPI(url: string) {
-    return fetch(url)
+  private apiCall(urlPath, urlParams: object) {
+    const url = new URL('https://www.wienerlinien.at/ogd_realtime/');
+
+    url.pathname += urlPath;
+    url.search = queryString.stringify(urlParams);
+
+    return fetch(url.href)
       .then(this.checkStatus)
       .then(this.parseJson)
       .then(response => response.data)

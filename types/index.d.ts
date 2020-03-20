@@ -1,5 +1,5 @@
 declare class WienerLinien {
-    constructor(API_KEY: string);
+    constructor(API_KEY?: string);
 
     monitor(rbl: number | string | number[] | string[], options: MonitorOptions): Object;
     newsList(options: NewsListOptions): Object;

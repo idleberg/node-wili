@@ -16,7 +16,7 @@ Node Wrapper für das Echtzeitdaten API der Wiener Linien
 
 ## Voraussetzungen
 
-**Hinweis:** Seit November 2019 ist wird kein gültiger API Key mehr benötigt.
+**Hinweis:** Seit November 2019 wird kein gültiger API Key mehr für die Verwendung benötigt. Zuvor erworbene Keys können weiterhin verwendet werden.
 
 ## Anwendung
 

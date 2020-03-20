@@ -16,7 +16,7 @@ A Node wrapper for the Wiener Linien public transport API
 
 ## Prerequisites
 
-**Note:** Before November 2019, a valid API key to access Wiener Linien's real-time data was required. <del>[Sign up here!](https://www.wien.gv.at/formularserver2/user/formular.aspx?pid=3b49a23de1ff43efbc45ae85faee31db&pn=B0718725a79fb40f4bb4b7e0d2d49f1d1)</del>
+**Note:** As of November 2019, a valid API key to access Wiener Linien's real-time data is no longer required.
 
 A valid API-Key is no longer required. Just ignore/delete the value `"SENDER="` contained in the files.
 

@@ -16,9 +16,7 @@ Node Wrapper für das Echtzeitdaten API der Wiener Linien
 
 ## Voraussetzungen
 
-**Hinweis:** Vor November 2019 wurde ein gültiger API Key vorausgesetzt. <del>[Hier kannst Du einen beantragen!](https://www.wien.gv.at/formularserver2/user/formular.aspx?pid=3b49a23de1ff43efbc45ae85faee31db&pn=B0718725a79fb40f4bb4b7e0d2d49f1d1)</del>
-
-Ein gültiger API-Key wird nicht mehr benötigt. Die in den Files enthaltenen `"SENDER="`-Werte können ignoriert oder gelöscht werden.
+**Hinweis:** Seit November 2019 ist wird kein gültiger API Key mehr benötigt.
 
 ## Anwendung
 

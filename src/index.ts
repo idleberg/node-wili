@@ -1,5 +1,5 @@
-import * as fetch from 'isomorphic-fetch';
-import * as queryString from 'query-string';
+import fetch from 'isomorphic-fetch';
+import queryString from 'query-string';
 
 export default class WienerLinien {
   API_KEY: string;
@@ -7,16 +7,16 @@ export default class WienerLinien {
   constructor(API_KEY: string | undefined = undefined) {
     this.API_KEY = (API_KEY && API_KEY.length)
       ? API_KEY
-      : process.env.WIENER_LINIEN_API_KEY2 || undefined;
+      : process.env.WIENER_LINIEN_API_KEY || undefined;
   }
 
   /**
    * Returns real-time data for a station
-   * @param {number|string|number[]|string[]} rbl - RBL number
-   * @param {Object} [options] - optional arguments
-   * @returns {Object} - JSON
+   * @param rbl - RBL number
+   * @param options optional arguments
+   * @returns - JSON
    */
-  public monitor(rbl: number | string | number[] | string[], options: MonitorOptions = {}) {
+  public monitor(rbl: number | string | number[] | string[], options: MonitorOptions = {}): void {
     const urlParams: MonitorParams = {
       rbl: rbl,
     };
@@ -34,10 +34,10 @@ export default class WienerLinien {
 
   /**
    * Returns news, elevator maintenance and other information
-   * @param {Object} [options] - optional arguments
-   * @returns {Object} - JSON
+   * @param options optional arguments
+   * @returns JSON
    */
-  public newsList(options: NewsListOptions = {}) {
+  public newsList(options: NewsListOptions = {}): void {
     const urlParams: NewsListParams = {};
 
     if (typeof options.relatedLine !== 'undefined' && options.relatedLine) {
@@ -61,10 +61,10 @@ export default class WienerLinien {
 
   /**
    * Returns interruption of operations and elevator outage
-   * @param {Object} [options] - optional arguments
-   * @returns {Object} - JSON
+   * @param options optional arguments
+   * @returns JSON
    */
-  public trafficInfoList(options: TrafficInfoOptions = {}) {
+  public trafficInfoList(options: TrafficInfoOptions = {}): void {
     const urlParams: TrafficInfoParams = {};
 
     if (typeof options.relatedLine !== 'undefined' && options.relatedLine) {
@@ -98,7 +98,7 @@ export default class WienerLinien {
     return response.json();
   }
 
-  private apiCall(urlPath, urlParams: object) {
+  private apiCall(urlPath, urlParams: unknown) {
     const url = new URL('https://www.wienerlinien.at');
 
     url.pathname = `/ogd_realtime/${urlPath}`;

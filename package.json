@@ -8,10 +8,11 @@
     "url": "https://github.com/idleberg/node-wili.git"
   },
   "scripts": {
-    "build": "tsc --pretty --project ./",
-    "dev": "tsc --watch --pretty --project ./",
-    "lint": "tslint --project ./",
-    "precommit": "npm run lint && npm run test",
+    "build": "rollup -c",
+    "dev": "npm run start",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint --fix ./src",
+    "start": "rollup -w -c",
     "test": "ava ./test/test.js --verbose --fail-fast"
   },
   "keywords": [
@@ -28,10 +29,28 @@
     "query-string": "^6.11.1"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "@rollup/plugin-typescript": "^5.0.2",
     "@types/node": "^13.9.2",
+    "@typescript-eslint/eslint-plugin": "^3.7.0",
+    "@typescript-eslint/parser": "^3.7.0",
     "ava": "^2.4.0",
+    "eslint": "^7.5.0",
+    "esm": "^3.2.25",
     "husky": "^4.2.3",
-    "tslint": "^6.1.0",
+    "rollup": "^2.23.0",
     "typescript": "^3.8.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run test"
+    }
+  },
+  "ava": {
+    "require": [
+      "esm"
+    ]
   }
 }

@@ -1,14 +1,20 @@
 // Dependencies
-import WienerLinien from '../lib/index';
+import isCI from 'is-ci';
 import test from 'ava';
+import WienerLinien from '../lib/index';
 
 const wl = new WienerLinien();
 
 test('Valid environmental variable WIENER_LINIEN_API_KEY defined', t => {
-  const expected = undefined;
-  const actual = process.env.WIENER_LINIEN_API_KEY;
+  if (!isCI) {
+    t.log('As of November 2019, a valid API key to access Wiener Linien\'s real-time data is no longer required');
+    t.pass();
+  } else {
+    const expected = undefined;
+    const actual = process.env.WIENER_LINIEN_API_KEY;
 
-  t.not(actual, expected, "You need define the environmental variable `WIENER_LINIEN_API_KEY` containing a valid Wiener Linien API key");
+    t.not(actual, expected, "You need define the environmental variable `WIENER_LINIEN_API_KEY` containing a valid Wiener Linien API key");
+  }
 });
 
 test('monitor() returns "monitors"', t => {

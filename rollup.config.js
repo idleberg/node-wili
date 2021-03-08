@@ -16,6 +16,7 @@ const plugins = [
 
 export default [
   {
+    external: ['node-fetch'],
     input: 'src/index.ts',
     output: {
       dir: 'lib',

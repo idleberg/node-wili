@@ -6,7 +6,7 @@ import WienerLinien from '../lib/index';
 const wl = new WienerLinien();
 
 test('Valid environmental variable WIENER_LINIEN_API_KEY defined', t => {
-  if (!isCI) {
+  if (!isCI && !process.env.WIENER_LINIEN_API_KEY) {
     t.log('As of November 2019, a valid API key to access Wiener Linien\'s real-time data is no longer required');
     t.pass();
   } else {

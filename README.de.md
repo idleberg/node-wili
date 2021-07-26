@@ -20,20 +20,10 @@ Node Wrapper für das Echtzeitdaten API der Wiener Linien
 
 ## Anwendung
 
-Das Modul lässt sich per ES6 Imports oder `require()` importieren:
-
-```js
-// ECMAScript Import
-import WienerLinien from 'wili';
-
-// CommonJS Require
-const WienerLinien = require('wili');
-```
-
 Beispielanwendung:
 
 ```js
-import WienerLinien from 'wili';
+import { WienerLinien } from 'wili';
 
 // Der API-Key kann weggelassen werden, wenn
 // process.env.WIENER_LINIEN_API_KEY gesetzt ist

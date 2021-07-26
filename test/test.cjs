@@ -1,7 +1,7 @@
 // Dependencies
-import isCI from 'is-ci';
-import test from 'ava';
-import WienerLinien from '../lib/index';
+const isCI = require('is-ci');
+const test = require('ava');
+const { WienerLinien } = require('../lib/wili.cjs');
 
 const wl = new WienerLinien();
 

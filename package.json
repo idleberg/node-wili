@@ -4,7 +4,12 @@
   "description": "A Node client for the Wiener Linien public transport API",
   "author": "Jan T. Sott",
   "license": "MIT",
-  "main": "lib/index.js",
+  "type": "module",
+  "exports": {
+    "import": "./lib/wili.mjs",
+    "require": "./lib/wili.cjs"
+  },
+  "typings": "types/",
   "repository": {
     "type": "git",
     "url": "https://github.com/idleberg/node-wili.git"
@@ -15,7 +20,8 @@
     "lint": "eslint ./src",
     "lint:fix": "eslint --fix ./src",
     "start": "rollup -w -c",
-    "test": "ava ./test/test.js --verbose --fail-fast"
+    "test": "ava ./test/test.*js --verbose --fail-fast",
+    "prepare": "husky install"
   },
   "keywords": [
     "wiener linien",
@@ -37,19 +43,15 @@
     "@typescript-eslint/eslint-plugin": "^4.16.1",
     "@typescript-eslint/parser": "^4.16.1",
     "ava": "^3.15.0",
+    "encoding": "^0.1.13",
     "eslint": "^7.5.0",
     "esm": "^3.2.25",
-    "husky": "^4.2.5",
+    "husky": "^7.0.0",
     "is-ci": "^2.0.0",
     "lint-staged": "^10.5.4",
     "rollup": "^2.23.0",
     "tslib": "^2.2.0",
     "typescript": "^4.2.3"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "ava": {
     "require": [

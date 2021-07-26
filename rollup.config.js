@@ -1,29 +1,53 @@
 import commonjs from '@rollup/plugin-commonjs';
-import { nodeResolve } from '@rollup/plugin-node-resolve';
 import json from '@rollup/plugin-json';
 import typescript from '@rollup/plugin-typescript';
 
 const plugins = [
   commonjs(),
-  json(),
-  nodeResolve({
-    preferBuiltins: true
-  }),
-  typescript({
-    allowSyntheticDefaultImports: true
-  })
+  json()
+];
+
+const compilerOptions = {
+  allowSyntheticDefaultImports: true,
+  moduleResolution: "node",
+  strictNullChecks: true,
+  typeRoots: ['./types', './node_modules/@types']
+};
+
+const external = [
+  'child_process',
+  'events',
+  'os',
+  'stream'
 ];
 
 export default [
   {
-    external: ['node-fetch'],
+    external,
     input: 'src/index.ts',
     output: {
-      dir: 'lib',
-      exports: 'default',
+      file: 'lib/wili.cjs',
       format: 'cjs'
     },
-    plugins: plugins
+    plugins: [
+      ...plugins,
+      typescript(compilerOptions)
+    ]
   },
-
+  {
+    external,
+    input: 'src/index.ts',
+    output: {
+      file: 'lib/wili.mjs',
+      format: 'esm'
+    },
+    plugins: [
+      ...plugins,
+      typescript({
+        ...compilerOptions,
+        module: "ES2020",
+        moduleResolution: "node"
+      })
+    ]
+  }
 ];

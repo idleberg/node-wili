@@ -1,13 +1,13 @@
 import fetch from 'isomorphic-fetch';
 import queryString from 'query-string';
 
-export default class WienerLinien {
-  API_KEY: string;
+class WienerLinien {
+  API_KEY: string | undefined;
 
   constructor(API_KEY: string | undefined = undefined) {
     this.API_KEY = (API_KEY && API_KEY.length)
-      ? API_KEY
-      : process.env.WIENER_LINIEN_API_KEY || undefined;
+      ? String(API_KEY)
+      : String(process.env.WIENER_LINIEN_API_KEY) || 'undefined';
   }
 
   /**
@@ -98,7 +98,7 @@ export default class WienerLinien {
     return response.json();
   }
 
-  private apiCall(urlPath, urlParams: unknown) {
+  private apiCall(urlPath, urlParams: Record<string, any>) {
     const url = new URL('https://www.wienerlinien.at');
 
     url.pathname = `/ogd_realtime/${urlPath}`;
@@ -111,3 +111,7 @@ export default class WienerLinien {
       .catch(console.error);
   }
 }
+
+export {
+  WienerLinien
+};

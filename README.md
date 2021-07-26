@@ -20,20 +20,10 @@ A Node wrapper for the Wiener Linien public transport API
 
 ## Usage
 
-Use ES6 imports or `require()` to include the module:
-
-```js
-// ECMAScript Import
-import WienerLinien from 'wili';
-
-// CommonJS Require
-const WienerLinien = require('wili');
-```
-
 Example usage in script:
 
 ```js
-import WienerLinien from 'wili';
+import { WienerLinien } from 'wili';
 
 // The API key can be omitted when
 // process.env.WIENER_LINIEN_API_KEY is set

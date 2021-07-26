@@ -1,3 +1,4 @@
+/* eslint-disable */
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
@@ -8,4 +9,8 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
   ],
+  rules: {
+    // temporary
+    "@typescript-eslint/no-explicit-any": "off"
+  }
 };

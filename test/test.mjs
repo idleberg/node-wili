@@ -4,18 +4,6 @@ import { WienerLinien } from '../lib/wili.mjs';
 
 const wl = new WienerLinien();
 
-test('Valid environmental variable WIENER_LINIEN_API_KEY defined', t => {
-  if (!process.env.WIENER_LINIEN_API_KEY) {
-    t.log('As of November 2019, a valid API key to access Wiener Linien\'s real-time data is no longer required');
-    t.pass();
-  } else {
-    const expected = undefined;
-    const actual = process.env.WIENER_LINIEN_API_KEY;
-
-    t.not(actual, expected, "You need define the environmental variable `WIENER_LINIEN_API_KEY` containing a valid Wiener Linien API key");
-  }
-});
-
 test('monitor() returns "monitors"', t => {
   return Promise.resolve(wl.monitor([4111, 4118, 4202, 4213, 4429, 4408]))
     .then(data => {

@@ -40,14 +40,12 @@ wili.trafficInfoList(options)
 });
 
 // async/await
-(async () => {
-  try {
-    let data = await wili.trafficInfoList(options);
-    console.log(data.trafficInfos);
-  } catch (output) {
-    console.error(error);
-  }
-})();
+try {
+  let data = await wili.trafficInfoList(options);
+  console.log(data.trafficInfos);
+} catch (output) {
+  console.error(error);
+}
 ```
 
 ## API

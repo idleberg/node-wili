@@ -17,7 +17,9 @@ const compilerOptions = {
 const external = [
   'child_process',
   'events',
+  'isomorphic-fetch',
   'os',
+  'query-string',
   'stream'
 ];
 

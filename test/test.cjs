@@ -1,12 +1,11 @@
 // Dependencies
-const isCI = require('is-ci');
 const test = require('ava');
 const { WienerLinien } = require('../lib/wili.cjs');
 
 const wl = new WienerLinien();
 
 test('Valid environmental variable WIENER_LINIEN_API_KEY defined', t => {
-  if (!isCI && !process.env.WIENER_LINIEN_API_KEY) {
+  if (!process.env.WIENER_LINIEN_API_KEY) {
     t.log('As of November 2019, a valid API key to access Wiener Linien\'s real-time data is no longer required');
     t.pass();
   } else {

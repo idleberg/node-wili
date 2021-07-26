@@ -24,16 +24,14 @@ Example usage in script:
 ```js
 import { WienerLinien } from 'wili';
 
-// The API key can be omitted when
-// process.env.WIENER_LINIEN_API_KEY is set
-const wl = new WienerLinien(API_KEY);
+const wili = new WienerLinien();
 
 const options = {
   relatedLine: ['U2', 'U4', 'U6']
 };
 
 // Promise API
-wl.trafficInfoList(options)
+wili.trafficInfoList(options)
 .then( data => {
   console.log(data.trafficInfos);
 })
@@ -44,7 +42,7 @@ wl.trafficInfoList(options)
 // async/await
 (async () => {
   try {
-    let data = await wl.trafficInfoList(options);
+    let data = await wili.trafficInfoList(options);
     console.log(data.trafficInfos);
   } catch (output) {
     console.error(error);

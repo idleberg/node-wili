@@ -2,9 +2,8 @@
 
 [![npm](https://flat.badgen.net/npm/license/wili)](https://www.npmjs.org/package/wili)
 [![npm](https://flat.badgen.net/npm/v/wili)](https://www.npmjs.org/package/wili)
-[![CircleCI](https://flat.badgen.net/circleci/github/idleberg/node-wili)](https://circleci.com/gh/idleberg/node-wili)
+[![CI](https://img.shields.io/github/workflow/status/idleberg/node-wili/CI?style=flat-square)](https://github.com/idleberg/node-wili/actions)
 [![David](https://flat.badgen.net/david/dep/idleberg/node-wili)](https://david-dm.org/idleberg/node-wili)
-[![David](https://flat.badgen.net/david/dev/idleberg/node-wili)](https://david-dm.org/idleberg/node-wili?type=dev)
 
 [English](README.md) | **Deutsch**
 

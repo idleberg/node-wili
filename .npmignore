@@ -14,6 +14,8 @@ tsconfig.json
 tslint.json
 
 # Development
+.eslintcache
+.husky/
 tsconfig.tsbuildinfo
 
 # project specific

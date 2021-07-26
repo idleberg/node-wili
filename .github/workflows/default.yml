@@ -5,6 +5,8 @@ on: [push]
 jobs:
   default:
     runs-on: ${{ matrix.os }}
+    env:
+      IS_CI: true
     strategy:
       matrix:
         node-version: ['lts/*']

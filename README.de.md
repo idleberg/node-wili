@@ -6,15 +6,11 @@
 
 [English](README.md) | **Deutsch**
 
-Node Wrapper für das Echtzeitdaten API der Wiener Linien
+Node Wrapper für die Echtzeitdaten-API der Wiener Linien
 
 ## Installation
 
 `yarn add wili || npm install wili`
-
-## Voraussetzungen
-
-**Hinweis:** Seit November 2019 wird kein gültiger API Key mehr für die Verwendung benötigt. Zuvor erworbene Keys können weiterhin verwendet werden.
 
 ## Anwendung
 

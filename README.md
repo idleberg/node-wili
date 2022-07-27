@@ -31,12 +31,12 @@ const options = {
 
 // Promise API
 wili.trafficInfoList(options)
-.then( data => {
-  console.log(data.trafficInfos);
-})
-.catch( error => {
-  console.error(error);
-});
+  .then( data => {
+    console.log(data.trafficInfos);
+  })
+  .catch( error => {
+    console.error(error);
+  });
 
 // async/await
 try {

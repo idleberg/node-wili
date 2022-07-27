@@ -3,7 +3,6 @@
 [![npm](https://flat.badgen.net/npm/license/wili)](https://www.npmjs.org/package/wili)
 [![npm](https://flat.badgen.net/npm/v/wili)](https://www.npmjs.org/package/wili)
 [![CI](https://img.shields.io/github/workflow/status/idleberg/node-wili/CI?style=flat-square)](https://github.com/idleberg/node-wili/actions)
-[![David](https://flat.badgen.net/david/dep/idleberg/node-wili)](https://david-dm.org/idleberg/node-wili)
 
 [English](README.md) | **Deutsch**
 

@@ -32,24 +32,24 @@
   ],
   "dependencies": {
     "isomorphic-fetch": "^3.0.0",
-    "query-string": "^7.0.1"
+    "query-string": "^7.1.1"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^19.0.1",
+    "@rollup/plugin-commonjs": "^22.0.1",
     "@rollup/plugin-json": "^4.1.0",
-    "@rollup/plugin-node-resolve": "^13.0.4",
-    "@rollup/plugin-typescript": "^8.2.0",
-    "@types/node": "^14.0.26",
-    "@typescript-eslint/eslint-plugin": "^4.16.1",
-    "@typescript-eslint/parser": "^4.16.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.3",
+    "@types/node": "^16.11.45",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
     "ava": "^3.15.0",
     "encoding": "^0.1.13",
-    "eslint": "^7.5.0",
-    "husky": "^7.0.0",
-    "lint-staged": "^11.1.1",
-    "rollup": "^2.23.0",
-    "tslib": "^2.2.0",
-    "typescript": "^4.2.3"
+    "eslint": "^8.20.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "rollup": "^2.77.2",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
   },
   "lint-staged": {
     "*.ts": "eslint --cache --fix"

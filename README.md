@@ -12,10 +12,6 @@ A Node wrapper for the Wiener Linien public transport API
 
 `yarn add wili || npm install wili`
 
-## Prerequisites
-
-**Note:** As of November 2019, a valid API key to access Wiener Linien's real-time data is no longer required. However, if you obtained a key before, you can continue using it.
-
 ## Usage
 
 Example usage in script:

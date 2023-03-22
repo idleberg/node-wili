@@ -10,6 +10,13 @@
     "require": "./lib/wili.cjs"
   },
   "typings": "types/",
+  "files": [
+    "data/",
+    "lib/",
+    "types/",
+    "LICENSE",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/idleberg/node-wili.git"

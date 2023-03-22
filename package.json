@@ -42,21 +42,21 @@
     "query-string": "^7.1.1"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^22.0.1",
-    "@rollup/plugin-json": "^4.1.0",
-    "@rollup/plugin-node-resolve": "^13.3.0",
-    "@rollup/plugin-typescript": "^8.3.3",
-    "@types/node": "^16.11.45",
-    "@typescript-eslint/eslint-plugin": "^5.31.0",
-    "@typescript-eslint/parser": "^5.31.0",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/node": "^18.15.5",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
     "ava": "^4.3.1",
     "encoding": "^0.1.13",
-    "eslint": "^8.20.0",
-    "husky": "^8.0.1",
-    "lint-staged": "^13.0.3",
-    "rollup": "^2.77.2",
-    "tslib": "^2.4.0",
-    "typescript": "^4.7.4"
+    "eslint": "^8.36.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
+    "rollup": "^3.20.0",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.2"
   },
   "lint-staged": {
     "*.ts": "eslint --cache --fix"

@@ -5,11 +5,11 @@
   "author": "Jan T. Sott",
   "license": "MIT",
   "type": "module",
-  "exports": {
-    "import": "./lib/wili.mjs",
-    "require": "./lib/wili.cjs"
-  },
+  "exports": "./lib/wili.mjs",
   "typings": "types/",
+  "engines": {
+    "node": ">=16.13 || >=18"
+  },
   "files": [
     "data/",
     "lib/",
@@ -22,11 +22,11 @@
     "url": "https://github.com/idleberg/node-wili.git"
   },
   "scripts": {
-    "build": "rollup -c",
+    "build": "esbuild src/index.ts --bundle --platform=node --outfile=lib/wili.mjs --format=esm --external:isomorphic-fetch --external:query-string",
     "dev": "npm run start",
     "lint": "eslint ./src",
     "lint:fix": "eslint --fix ./src",
-    "start": "rollup -w -c",
+    "start": "npm run build -- --watch",
     "test": "ava ./test/test.*js --verbose --fail-fast",
     "prepare": "husky install"
   },
@@ -42,19 +42,15 @@
     "query-string": "^7.1.1"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^24.0.1",
-    "@rollup/plugin-json": "^6.0.0",
-    "@rollup/plugin-node-resolve": "^15.0.1",
-    "@rollup/plugin-typescript": "^11.0.0",
     "@types/node": "^18.15.5",
     "@typescript-eslint/eslint-plugin": "^5.56.0",
     "@typescript-eslint/parser": "^5.56.0",
     "ava": "^4.3.1",
     "encoding": "^0.1.13",
+    "esbuild": "^0.17.12",
     "eslint": "^8.36.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.0",
-    "rollup": "^3.20.0",
     "tslib": "^2.5.0",
     "typescript": "^5.0.2"
   },

@@ -2,31 +2,19 @@ import fetch from 'isomorphic-fetch';
 import queryString from 'query-string';
 
 class WienerLinien {
-  API_KEY: string | undefined;
-
-  constructor(API_KEY: string | undefined = undefined) {
-    this.API_KEY = (API_KEY && API_KEY.length)
-      ? String(API_KEY)
-      : String(process.env.WIENER_LINIEN_API_KEY) || 'undefined';
-  }
-
   /**
    * Returns real-time data for a station
    * @param rbl - RBL number
    * @param options optional arguments
    * @returns - JSON
    */
-  public monitor(rbl: number | string | number[] | string[], options: MonitorOptions = {}): void {
+  public monitor(rbl: number | string | number[] | string[], options: MonitorOptions = {}) {
     const urlParams: MonitorParams = {
       rbl: rbl,
     };
 
     if (typeof options.activateTrafficInfo !== 'undefined' && options.activateTrafficInfo) {
       urlParams['activateTrafficInfo'] = options.activateTrafficInfo;
-    }
-
-    if (this.API_KEY && this.API_KEY.trim().length) {
-      urlParams['sender'] = this.API_KEY;
     }
 
     return this.apiCall('/monitor', urlParams);
@@ -37,7 +25,7 @@ class WienerLinien {
    * @param options optional arguments
    * @returns JSON
    */
-  public newsList(options: NewsListOptions = {}): void {
+  public newsList(options: NewsListOptions = {}) {
     const urlParams: NewsListParams = {};
 
     if (typeof options.relatedLine !== 'undefined' && options.relatedLine) {
@@ -52,10 +40,6 @@ class WienerLinien {
       urlParams['name'] = options.name;
     }
 
-    if (this.API_KEY && this.API_KEY.trim().length) {
-      urlParams['sender'] = this.API_KEY;
-    }
-
     return this.apiCall('newsList', urlParams);
   }
 
@@ -64,7 +48,7 @@ class WienerLinien {
    * @param options optional arguments
    * @returns JSON
    */
-  public trafficInfoList(options: TrafficInfoOptions = {}): void {
+  public trafficInfoList(options: TrafficInfoOptions = {}) {
     const urlParams: TrafficInfoParams = {};
 
     if (typeof options.relatedLine !== 'undefined' && options.relatedLine) {
@@ -79,15 +63,11 @@ class WienerLinien {
       urlParams['name'] = options.name;
     }
 
-    if (this.API_KEY && this.API_KEY.trim().length) {
-      urlParams['sender'] = this.API_KEY;
-    }
-
     return this.apiCall('trafficInfoList', urlParams);
   }
 
   private checkStatus(response: Response): Promise<Response> {
-    if (response.status >= 200 && response.status < 300) {
+    if (response.ok) {
       return Promise.resolve(response);
     } else {
       return Promise.reject(new Error(response.statusText));
@@ -98,7 +78,7 @@ class WienerLinien {
     return response.json();
   }
 
-  private apiCall(urlPath, urlParams: Record<string, any>) {
+  private apiCall(urlPath: string, urlParams: Record<string, any>): Promise<Record<string, unknown>> {
     const url = new URL('https://www.wienerlinien.at');
 
     url.pathname = `/ogd_realtime/${urlPath}`;
@@ -107,7 +87,7 @@ class WienerLinien {
     return fetch(url.href)
       .then(this.checkStatus)
       .then(this.parseJson)
-      .then(response => response.data)
+      .then((response: any) => response.data)
       .catch(console.error);
   }
 }

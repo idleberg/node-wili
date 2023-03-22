@@ -24,11 +24,12 @@
   "scripts": {
     "build": "esbuild src/index.ts --bundle --platform=node --outfile=lib/wili.mjs --format=esm --external:isomorphic-fetch --external:query-string",
     "dev": "npm run start",
-    "lint": "eslint ./src",
     "lint:fix": "eslint --fix ./src",
+    "lint": "eslint ./src",
+    "prepack": "npm run build",
+    "prepare": "husky install",
     "start": "npm run build -- --watch",
-    "test": "uvu tests",
-    "prepare": "husky install"
+    "test": "uvu tests"
   },
   "keywords": [
     "wiener linien",

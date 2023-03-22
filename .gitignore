@@ -13,6 +13,9 @@ yarn.lock
 .eslintcache
 tsconfig.tsbuildinfo
 
+# Build
+lib/
+
 # project specific
 *.map
 todo.md

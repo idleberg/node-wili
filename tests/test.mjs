@@ -4,7 +4,40 @@ import * as assert from 'uvu/assert';
 
 const wl = new WienerLinien();
 
-test('monitor() returns "monitors"', () => {
+test('monitor() returns "monitors - string[]"', () => {
+  return Promise.resolve(wl.monitor('4111'))
+    .then(data => {
+      const expected = true;
+      const actual = 'monitors' in data;
+
+      assert.is(actual, expected);
+    })
+    .catch();
+});
+
+test('monitor() returns "monitors" - number', () => {
+  return Promise.resolve(wl.monitor(4111))
+    .then(data => {
+      const expected = true;
+      const actual = 'monitors' in data;
+
+      assert.is(actual, expected);
+    })
+    .catch();
+});
+
+test('monitor() returns "monitors - string[]"', () => {
+  return Promise.resolve(wl.monitor(['4111', '4118', '4202', '4213', '4429', '4408']))
+    .then(data => {
+      const expected = true;
+      const actual = 'monitors' in data;
+
+      assert.is(actual, expected);
+    })
+    .catch();
+});
+
+test('monitor() returns "monitors" - number[]', () => {
   return Promise.resolve(wl.monitor([4111, 4118, 4202, 4213, 4429, 4408]))
     .then(data => {
       const expected = true;
@@ -26,7 +59,40 @@ test('newsList() returns "monitors" (relatedLine)', () => {
     .catch();
 });
 
-test('newsList() returns "pois" (relatedStop)', () => {
+test('newsList() returns "pois" (relatedStop) - string', () => {
+  return Promise.resolve(wl.newsList({ relatedStop: '304' }))
+    .then(data => {
+      const expected = true;
+      const actual = 'pois' in data;
+
+      assert.is(actual, expected);
+    })
+    .catch();
+});
+
+test('newsList() returns "pois" (relatedStop) - number', () => {
+  return Promise.resolve(wl.newsList({ relatedStop: 304 }))
+    .then(data => {
+      const expected = true;
+      const actual = 'pois' in data;
+
+      assert.is(actual, expected);
+    })
+    .catch();
+});
+
+test('newsList() returns "pois" (relatedStop) - string[]', () => {
+  return Promise.resolve(wl.newsList({ relatedStop: ['304', '834'] }))
+    .then(data => {
+      const expected = true;
+      const actual = 'pois' in data;
+
+      assert.is(actual, expected);
+    })
+    .catch();
+});
+
+test('newsList() returns "pois" (relatedStop) - number[]', () => {
   return Promise.resolve(wl.newsList({ relatedStop: [304, 834] }))
     .then(data => {
       const expected = true;

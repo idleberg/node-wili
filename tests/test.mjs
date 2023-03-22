@@ -48,8 +48,41 @@ test('monitor() returns "monitors" - number[]', () => {
     .catch();
 });
 
-test('newsList() returns "monitors" (relatedLine)', () => {
-  return Promise.resolve(wl.newsList({ relatedLine: ['U1', 'U2', 'U3', 'U4', 'U5', 'U6'] }))
+test('newsList() returns "monitors" (relatedLine) - string[]', () => {
+  return Promise.resolve(wl.newsList({ relatedLine: ['37', '38', '41', '42', '43', '44'] }))
+    .then(data => {
+      const expected = true;
+      const actual = 'pois' in data;
+
+      assert.is(actual, expected);
+    })
+    .catch();
+});
+
+test('newsList() returns "monitors" (relatedLine) - number[]', () => {
+  return Promise.resolve(wl.newsList({ relatedLine: [37, 38, 41, 42, 43, 44] }))
+    .then(data => {
+      const expected = true;
+      const actual = 'pois' in data;
+
+      assert.is(actual, expected);
+    })
+    .catch();
+});
+
+test('newsList() returns "monitors" (relatedLine) - string', () => {
+  return Promise.resolve(wl.newsList({ relatedLine: '37' }))
+    .then(data => {
+      const expected = true;
+      const actual = 'pois' in data;
+
+      assert.is(actual, expected);
+    })
+    .catch();
+});
+
+test('newsList() returns "monitors" (relatedLine) - number[]', () => {
+  return Promise.resolve(wl.newsList({ relatedLine: 37 }))
     .then(data => {
       const expected = true;
       const actual = 'pois' in data;

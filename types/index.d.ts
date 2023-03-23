@@ -1,40 +1,34 @@
+type StringNumbers = number | string | number[] | string[];
+
 declare class WienerLinien {
     constructor(API_KEY?: string);
 
-    monitor(rbl: number | string | number[] | string[], options: MonitorOptions): unknown;
-    newsList(options: NewsListOptions): unknown;
-    trafficInfoList(options: TrafficInfoOptions): unknown;
+    monitor(rbl: StringNumbers, options: MonitorOptions): Promise<Record<string, unknown>>;
+    newsList(options: NewsListOptions): Promise<Record<string, unknown>>;
+    trafficInfoList(options: TrafficInfoOptions): Promise<Record<string, unknown>>;
 
-    API_KEY: string;
     baseUrl?: string;
     reqUrl?: string;
 }
 
-interface MonitorOptions {
-  activateTrafficInfo?: string|string[];
+type MonitorOptions = {
+  activateTrafficInfo?: string | string[];
 }
 
 interface MonitorParams extends MonitorOptions {
-  rbl: number | string | number[] | string[];
-  sender?: string
+  rbl?: StringNumbers;
 }
 
-interface TrafficInfoOptions {
-  relatedLine?: number | string | number[] | string[];
-  relatedStop?: number | string | number[] | string[];
+type NewsListOptions = {
   name?: string | string[];
+  relatedLine?: StringNumbers;
+  relatedStop?: StringNumbers;
 }
 
-interface TrafficInfoParams extends TrafficInfoOptions {
-  sender?: string
-}
-
-interface NewsListOptions {
-  relatedLine?: number | string | number[] | string[];
-  relatedStop?: number | string | number[] | string[];
+type TrafficInfoOptions = {
   name?: string | string[];
+  relatedLine?: StringNumbers;
+  relatedStop?: StringNumbers;
 }
 
-interface NewsListParams extends NewsListOptions {
-  sender?: string
-}
+type UrlParams = MonitorOptions | NewsListOptions | TrafficInfoOptions;

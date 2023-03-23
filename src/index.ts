@@ -44,9 +44,7 @@ export class WienerLinien {
   }
 
   private apiCall(urlPath: string, urlParams: UrlParams): Promise<Record<string, unknown>> {
-    const url = new URL('https://www.wienerlinien.at');
-
-    url.pathname = `/ogd_realtime/${urlPath}`;
+    const url = new URL(`https://www.wienerlinien.at/ogd_realtime/${urlPath}`);
     url.search = queryString.stringify(urlParams);
 
     return fetch(url.href)

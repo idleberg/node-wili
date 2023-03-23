@@ -4,7 +4,7 @@ import * as assert from 'uvu/assert';
 
 const wl = new WienerLinien();
 
-test('monitor() returns "monitors - string[]"', () => {
+test('monitor() returns "monitors - string"', () => {
   return Promise.resolve(wl.monitor('4111'))
     .then(data => {
       const expected = true;
@@ -136,8 +136,41 @@ test('newsList() returns "pois" (relatedStop) - number[]', () => {
     .catch();
 });
 
-test('trafficInfoList() returns "trafficInfos" (relatedLine)', () => {
-  return Promise.resolve(wl.trafficInfoList({ relatedLine: ['U1', 'U2', 'U3', 'U4', 'U5', 'U6'] }))
+test('trafficInfoList() returns "trafficInfos" (relatedLine) - string[]', () => {
+  return Promise.resolve(wl.trafficInfoList({ relatedLine: ['37', '38', '41', '42', '43', '44'] }))
+    .then(data => {
+      const expected = true;
+      const actual = 'trafficInfos' in data;
+
+      assert.is(actual, expected);
+    })
+    .catch();
+});
+
+test('trafficInfoList() returns "trafficInfos" (relatedLine) - number[]', () => {
+  return Promise.resolve(wl.trafficInfoList({ relatedLine: [37, 38, 41, 42, 43, 44] }))
+    .then(data => {
+      const expected = true;
+      const actual = 'trafficInfos' in data;
+
+      assert.is(actual, expected);
+    })
+    .catch();
+});
+
+test('trafficInfoList() returns "trafficInfos" (relatedLine) - string', () => {
+  return Promise.resolve(wl.trafficInfoList({ relatedLine: '37' }))
+    .then(data => {
+      const expected = true;
+      const actual = 'trafficInfos' in data;
+
+      assert.is(actual, expected);
+    })
+    .catch();
+});
+
+test('trafficInfoList() returns "trafficInfos" (relatedLine) number', () => {
+  return Promise.resolve(wl.trafficInfoList({ relatedLine: 37 }))
     .then(data => {
       const expected = true;
       const actual = 'trafficInfos' in data;

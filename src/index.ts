@@ -1,7 +1,13 @@
-import fetch from 'isomorphic-fetch';
-import queryString from 'query-string';
-
 export class WienerLinien {
+  #fetch;
+
+  constructor(fetchParam = globalThis.fetch) {
+    if (typeof fetch !== 'function') {
+      throw new TypeError('The supplied fetch parameter is not a function');
+    }
+
+    this.#fetch = fetchParam;
+  }
   /**
    * Returns real-time data for a station
    * @param {StringNumbers} rbl - RBL number
@@ -14,7 +20,7 @@ export class WienerLinien {
       rbl: rbl
     };
 
-    return this.apiCall('/monitor', urlParams);
+    return this.#apiCall('/monitor', urlParams);
   }
 
   /**
@@ -23,7 +29,7 @@ export class WienerLinien {
    * @returns {object}
    */
   public newsList(options: NewsListOptions = {}) {
-    return this.apiCall('newsList', options);
+    return this.#apiCall('newsList', options);
   }
 
   /**
@@ -32,10 +38,26 @@ export class WienerLinien {
    * @returns {object}
    */
   public trafficInfoList(options: TrafficInfoOptions = {}) {
-    return this.apiCall('trafficInfoList', options);
+    return this.#apiCall('trafficInfoList', options);
   }
 
-  private checkStatus(response: Response): Promise<Response> {
+  #buildUrl(urlPath: string, urlParams: UrlParams) {
+    const searchParams = new URLSearchParams();
+
+    for (const [key, value] of Object.entries(urlParams)) {
+      if (Array.isArray(value)) {
+        for (const item of value) {
+          searchParams.append(key, String(item));
+        }
+      } else {
+        searchParams.set(key, String(value));
+      }
+    }
+
+    return new URL(`https://www.wienerlinien.at/ogd_realtime/${urlPath}?${searchParams.toString()}`);
+  }
+
+  #checkStatus(response: Response): Promise<Response> {
     if (response.ok) {
       return Promise.resolve(response);
     } else {
@@ -43,12 +65,11 @@ export class WienerLinien {
     }
   }
 
-  private apiCall(urlPath: string, urlParams: UrlParams): Promise<Record<string, unknown>> {
-    const url = new URL(`https://www.wienerlinien.at/ogd_realtime/${urlPath}`);
-    url.search = queryString.stringify(urlParams);
+  #apiCall(urlPath: string, urlParams: UrlParams): Promise<Record<string, unknown>> {
+    const url = this.#buildUrl(urlPath, urlParams);
 
-    return fetch(url.href)
-      .then(this.checkStatus)
+    return this.#fetch(url.href)
+      .then(this.#checkStatus)
       .then((response: Response) => response.json())
       .then((json: any) => json.data)
       .catch(console.error);

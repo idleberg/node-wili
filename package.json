@@ -1,6 +1,6 @@
 {
   "name": "wili",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "A Node client for the Wiener Linien public transport API",
   "author": "Jan T. Sott",
   "license": "MIT",

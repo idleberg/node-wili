@@ -36,7 +36,7 @@ wili.trafficInfoList(options)
 
 // async/await
 try {
-  let data = await wili.trafficInfoList(options);
+  const data = await wili.trafficInfoList(options);
   console.log(data.trafficInfos);
 } catch (output) {
   console.error(error);

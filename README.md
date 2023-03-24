@@ -10,7 +10,7 @@ A Node wrapper for the Wiener Linien public transport API
 
 ## Installation
 
-`yarn add wili || npm install wili`
+`npm install wili`
 
 ## Usage
 
@@ -41,6 +41,17 @@ try {
 } catch (output) {
   console.error(error);
 }
+```
+
+:warning: For NodeJS versions lower than v18, the class needs to be instantiated with a `fetch`-implementation
+
+**Example**
+
+```js
+import { WienerLinien } from 'wili';
+import fetch from 'isomorphic-fetch';
+
+const wili = new WienerLinien(fetch);
 ```
 
 ## API

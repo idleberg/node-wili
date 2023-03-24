@@ -10,7 +10,7 @@ Node Wrapper für die Echtzeitdaten-API der Wiener Linien
 
 ## Installation
 
-`yarn add wili || npm install wili`
+`npm install wili`
 
 ## Anwendung
 
@@ -41,6 +41,17 @@ try {
 } catch (output) {
   console.error(error);
 }
+```
+
+:warning: Für NodeJS-Versionen unterhalb v18, muss die Klasse mit einer `fetch`-Implementierung instanziert werden.
+
+**Beispiel**
+
+```js
+import { WienerLinien } from 'wili';
+import fetch from 'isomorphic-fetch';
+
+const wili = new WienerLinien(fetch);
 ```
 
 ## API

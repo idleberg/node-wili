@@ -1,47 +1,54 @@
-export class WienerLinien {
-  #fetch;
-
-  constructor(fetchParam = globalThis.fetch) {
-    if (typeof fetch !== 'function') {
-      throw new TypeError('The supplied fetch parameter is not a function');
-    }
-
-    this.#fetch = fetchParam;
+/**
+ * Creates an instance of the WienerLinien API client.
+ * @param {function} fetchParam - The fetch function to use for making HTTP requests.
+ * @throws {TypeError} - If the supplied fetch parameter is not a function.
+ * @returns {Object} - The WienerLinien API client.
+ */
+export function createWienerLinien(fetchParam = globalThis.fetch) {
+  if (typeof fetchParam !== 'function') {
+    throw new TypeError('The supplied fetch parameter is not a function');
   }
+
   /**
-   * Returns real-time data for a station
-   * @param {StringNumbers} rbl - RBL number
-   * @param {MonitorOptions} options
-   * @returns {object}
+   * Returns real-time data for a station.
+   * @param {string} rbl - The RBL number.
+   * @param {Object} options - The monitor options.
+   * @returns {Promise<Object>} - The real-time data for the station.
    */
-  public monitor(rbl: StringNumbers, options: MonitorOptions = {}) {
-    const urlParams: MonitorParams = {
+  async function monitor(rbl: string, options = {}) {
+    const urlParams: URLSearchParams = {
       ...options,
       rbl: rbl
     };
 
-    return this.#apiCall('/monitor', urlParams);
+    return await apiCall('/monitor', urlParams);
   }
 
   /**
-   * Returns news, elevator maintenance and other information
-   * @param {NewsListOptions} options
-   * @returns {object}
+   * Returns news, elevator maintenance, and other information.
+   * @param {Object} options - The news list options.
+   * @returns {Promise<Object>} - The news and information.
    */
-  public newsList(options: NewsListOptions = {}) {
-    return this.#apiCall('newsList', options);
+  async function newsList(options = {}) {
+    return await apiCall('newsList', options);
   }
 
   /**
-   * Returns interruption of operations and elevator outage
-   * @param {TrafficInfoOptions} options
-   * @returns {object}
+   * Returns interruptions of operations and elevator outages.
+   * @param {Object} options - The traffic info options.
+   * @returns {Promise<Object>} - The traffic information.
    */
-  public trafficInfoList(options: TrafficInfoOptions = {}) {
-    return this.#apiCall('trafficInfoList', options);
+  async function trafficInfoList(options = {}) {
+    return await apiCall('trafficInfoList', options);
   }
 
-  #buildUrl(urlPath: string, urlParams: UrlParams) {
+  /**
+   * Builds the URL for making API requests.
+   * @param {string} urlPath - The URL path.
+   * @param {Object} urlParams - The URL parameters.
+   * @returns {URL} - The constructed URL.
+   */
+  function buildUrl(urlPath: string, urlParams: URLSearchParams) {
     const searchParams = new URLSearchParams();
 
     for (const [key, value] of Object.entries(urlParams)) {
@@ -57,21 +64,44 @@ export class WienerLinien {
     return new URL(`https://www.wienerlinien.at/ogd_realtime/${urlPath}?${searchParams.toString()}`);
   }
 
-  #checkStatus(response: Response): Promise<Response> {
+  /**
+   * Checks the response status and throws an error if it's not OK.
+   * @param {Response} response - The HTTP response.
+   * @returns {Promise<Response>} - The resolved response if the status is OK.
+   * @throws {Error} - If the response status is not OK.
+   */
+  async function checkStatus(response: Response) {
     if (response.ok) {
-      return Promise.resolve(response);
+      return response;
     } else {
-      return Promise.reject(new Error(response.statusText));
+      throw new Error(response.statusText);
     }
   }
 
-  #apiCall(urlPath: string, urlParams: UrlParams): Promise<Record<string, unknown>> {
-    const url = this.#buildUrl(urlPath, urlParams);
+  /**
+   * Makes an API call to the specified URL path with the given parameters.
+   * @param {string} urlPath - The URL path.
+   * @param {Object} urlParams - The URL parameters.
+   * @returns {Promise<Object>} - The API response data.
+   */
+  async function apiCall(urlPath: string, urlParams: URLSearchParams) {
+    const url = buildUrl(urlPath, urlParams);
 
-    return this.#fetch(url.href)
-      .then(this.#checkStatus)
-      .then((response: Response) => response.json())
-      .then((json: any) => json.data)
-      .catch(console.error);
+    try {
+      const response = await fetchParam(url.href);
+      const checkedResponse = await checkStatus(response);
+      const json = await checkedResponse.json();
+      return json.data;
+    } catch (error) {
+      console.error(error);
+    }
   }
+
+  return {
+    monitor,
+    newsList,
+    trafficInfoList
+  };
 }
+
+const WienerLinien = createWienerLinien();

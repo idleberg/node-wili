@@ -1,8 +1,8 @@
 import { test } from 'uvu';
-import { WienerLinien } from '../lib/wili.mjs';
+import { createWienerLinien } from '../lib/wili.mjs';
 import * as assert from 'uvu/assert';
 
-const wl = new WienerLinien();
+const wl = createWienerLinien();
 
 test('monitor() returns "monitors - string"', () => {
   return Promise.resolve(wl.monitor('4111'))

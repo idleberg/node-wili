@@ -28,7 +28,7 @@
     "prepack": "npm run build",
     "prepare": "husky install",
     "start": "npm run build -- --watch",
-    "test": "uvu tests"
+    "test": "uvu -r tsm tests"
   },
   "keywords": [
     "wiener linien",
@@ -37,7 +37,6 @@
     "öpvn",
     "public transport"
   ],
-  "dependencies": {},
   "devDependencies": {
     "@types/isomorphic-fetch": "^0.0.36",
     "@types/node": "^18.15.5",
@@ -48,6 +47,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.2.0",
     "tslib": "^2.5.0",
+    "tsm": "^2.3.0",
     "typescript": "^5.0.2",
     "uvu": "^0.5.6"
   },

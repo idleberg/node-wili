@@ -1,5 +1,5 @@
 import { test } from 'uvu';
-import { createWienerLinien } from '../lib/wili.mjs';
+import { createWienerLinien } from '../src/index';
 import * as assert from 'uvu/assert';
 
 const wl = createWienerLinien();

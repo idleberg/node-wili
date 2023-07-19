@@ -1,7 +1,7 @@
 type StringNumbers = number | string | number[] | string[];
 
 declare class WienerLinien {
-    constructor(API_KEY?: string);
+    constructor(fetch?: Fetch);
 
     monitor(rbl: StringNumbers, options: MonitorOptions): Promise<Record<string, unknown>>;
     newsList(options: NewsListOptions): Promise<Record<string, unknown>>;
@@ -10,6 +10,8 @@ declare class WienerLinien {
     baseUrl?: string;
     reqUrl?: string;
 }
+
+type Fetch = (input: URL | RequestInfo, init?: RequestInit | undefined) => Promise<Response>;
 
 type MonitorOptions = {
   activateTrafficInfo?: string | string[];

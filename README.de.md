@@ -17,9 +17,9 @@ Node Wrapper für die Echtzeitdaten-API der Wiener Linien
 Beispielanwendung:
 
 ```js
-import { WienerLinien } from 'wili';
+import { createWienerLinien } from 'wili';
 
-const wili = new WienerLinien();
+const wili = createWienerLinien();
 
 const options = {
   relatedLine: ['U2', 'U4', 'U6']
@@ -48,10 +48,10 @@ try {
 **Beispiel**
 
 ```js
-import { WienerLinien } from 'wili';
+import { createWienerLinien } from 'wili';
 import fetch from 'isomorphic-fetch';
 
-const wili = new WienerLinien(fetch);
+const wili = createWienerLinien(fetch);
 ```
 
 ## API

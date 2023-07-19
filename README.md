@@ -17,9 +17,9 @@ A Node wrapper for the Wiener Linien public transport API
 Example usage in script:
 
 ```js
-import { WienerLinien } from 'wili';
+import { createWienerLinien } from 'wili';
 
-const wili = new WienerLinien();
+const wili = createWienerLinien();
 
 const options = {
   relatedLine: ['U2', 'U4', 'U6']
@@ -48,10 +48,10 @@ try {
 **Example**
 
 ```js
-import { WienerLinien } from 'wili';
+import { createWienerLinien } from 'wili';
 import fetch from 'isomorphic-fetch';
 
-const wili = new WienerLinien(fetch);
+const wili = createWienerLinien(fetch);
 ```
 
 ## API

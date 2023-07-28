@@ -1,36 +1,34 @@
-type StringNumbers = number | string | number[] | string[];
 
-declare class WienerLinien {
-    constructor(fetch?: Fetch);
 
-    monitor(rbl: StringNumbers, options: MonitorOptions): Promise<Record<string, unknown>>;
-    newsList(options: NewsListOptions): Promise<Record<string, unknown>>;
-    trafficInfoList(options: TrafficInfoOptions): Promise<Record<string, unknown>>;
+declare namespace Wili {
+  function monitor(rbl: StringNumbers, options: MonitorOptions): Promise<Record<string, unknown>>;
+  function newsList(options: NewsListOptions): Promise<Record<string, unknown>>;
+  function trafficInfoList(options: TrafficInfoOptions): Promise<Record<string, unknown>>;
 
-    baseUrl?: string;
-    reqUrl?: string;
+  type Fetch = (input: URL | RequestInfo, init?: RequestInit | undefined) => Promise<Response>;
+  type StringNumbers = number | string | number[] | string[];
+  type UrlParams = MonitorOptions | NewsListOptions | TrafficInfoOptions;
+
+  type MonitorOptions = {
+    activateTrafficInfo?: string | string[];
+  }
+
+  interface MonitorParams extends MonitorOptions {
+    rbl?: StringNumbers;
+  }
+
+  type NewsListOptions = {
+    name?: string | string[];
+    relatedLine?: StringNumbers;
+    relatedStop?: StringNumbers;
+  }
+
+  type TrafficInfoOptions = {
+    name?: string | string[];
+    relatedLine?: StringNumbers;
+    relatedStop?: StringNumbers;
+  }
 }
 
-type Fetch = (input: URL | RequestInfo, init?: RequestInit | undefined) => Promise<Response>;
-
-type MonitorOptions = {
-  activateTrafficInfo?: string | string[];
-}
-
-interface MonitorParams extends MonitorOptions {
-  rbl?: StringNumbers;
-}
-
-type NewsListOptions = {
-  name?: string | string[];
-  relatedLine?: StringNumbers;
-  relatedStop?: StringNumbers;
-}
-
-type TrafficInfoOptions = {
-  name?: string | string[];
-  relatedLine?: StringNumbers;
-  relatedStop?: StringNumbers;
-}
-
-type UrlParams = MonitorOptions | NewsListOptions | TrafficInfoOptions;
+export = Wili;
+export as namespace Wili;

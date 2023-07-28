@@ -15,8 +15,8 @@ export function createWienerLinien(fetchParam = globalThis.fetch) {
    * @param {Object} options - The monitor options.
    * @returns {Promise<Object>} - The real-time data for the station.
    */
-  async function monitor(rbl: string, options = {}) {
-    const urlParams: URLSearchParams = {
+  async function monitor(rbl: Wili.StringNumbers, options = {}) {
+    const urlParams: Wili.MonitorParams = {
       ...options,
       rbl: rbl
     };
@@ -48,7 +48,7 @@ export function createWienerLinien(fetchParam = globalThis.fetch) {
    * @param {Object} urlParams - The URL parameters.
    * @returns {URL} - The constructed URL.
    */
-  function buildUrl(urlPath: string, urlParams: URLSearchParams) {
+  function buildUrl(urlPath: string, urlParams: Wili.UrlParams) {
     const searchParams = new URLSearchParams();
 
     for (const [key, value] of Object.entries(urlParams)) {
@@ -84,7 +84,7 @@ export function createWienerLinien(fetchParam = globalThis.fetch) {
    * @param {Object} urlParams - The URL parameters.
    * @returns {Promise<Object>} - The API response data.
    */
-  async function apiCall(urlPath: string, urlParams: URLSearchParams) {
+  async function apiCall(urlPath: string, urlParams: Wili.UrlParams) {
     const url = buildUrl(urlPath, urlParams);
 
     try {
@@ -104,4 +104,4 @@ export function createWienerLinien(fetchParam = globalThis.fetch) {
   };
 }
 
-const WienerLinien = createWienerLinien();
+export const WienerLinien = createWienerLinien();

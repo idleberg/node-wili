@@ -6,7 +6,7 @@
   "license": "MIT",
   "type": "module",
   "exports": "./lib/wili.mjs",
-  "typings": "types/",
+  "types": "./types/",
   "engines": {
     "node": ">=16.13 || >=18"
   },

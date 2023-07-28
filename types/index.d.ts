@@ -1,5 +1,3 @@
-
-
 declare namespace Wili {
   function monitor(rbl: StringNumbers, options: MonitorOptions): Promise<Record<string, unknown>>;
   function newsList(options: NewsListOptions): Promise<Record<string, unknown>>;

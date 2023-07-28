@@ -1,8 +1,8 @@
 # wili
 
-[![npm](https://flat.badgen.net/npm/license/wili)](https://www.npmjs.org/package/wili)
-[![npm](https://flat.badgen.net/npm/v/wili)](https://www.npmjs.org/package/wili)
-[![CI](https://img.shields.io/github/actions/workflow/status/idleberg/node-wili/default.yml?style=flat-square)](https://github.com/idleberg/node-wili/actions)
+[![License](https://img.shields.io/github/license/idleberg/node-wili?color=blue&style=for-the-badge)](https://github.com/idleberg/node-wili/blob/main/LICENSE)
+[![Version](https://img.shields.io/npm/v/wili?style=for-the-badge)](https://www.npmjs.org/package/wili)
+[![Build](https://img.shields.io/github/actions/workflow/status/idleberg/node-wili/default.yml?style=for-the-badge)](https://github.com/idleberg/node-wili/actions)
 
 [English](README.md) | **Deutsch**
 

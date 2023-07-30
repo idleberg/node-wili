@@ -103,5 +103,3 @@ export function createWienerLinien(fetchParam = globalThis.fetch) {
     trafficInfoList
   };
 }
-
-export const WienerLinien = createWienerLinien();

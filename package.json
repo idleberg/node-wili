@@ -5,7 +5,7 @@
   "author": "Jan T. Sott",
   "license": "MIT",
   "type": "module",
-  "typings": "./types/index.d.ts",
+  "typings": "./types",
   "exports": {
     "import": "./lib/wili.mjs"
   },
@@ -23,7 +23,7 @@
     "url": "https://github.com/idleberg/node-wili.git"
   },
   "scripts": {
-    "build": "esbuild src/index.ts --platform=node --outfile=lib/wili.mjs --format=esm",
+    "build": "rollup -c",
     "dev": "npm run start",
     "lint:fix": "eslint --fix ./src",
     "lint": "eslint ./src",
@@ -40,14 +40,15 @@
     "public transport"
   ],
   "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.2",
     "@types/isomorphic-fetch": "^0.0.36",
     "@types/node": "^18.15.5",
     "@typescript-eslint/eslint-plugin": "^5.56.0",
     "@typescript-eslint/parser": "^5.56.0",
-    "esbuild": "^0.17.12",
     "eslint": "^8.36.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.0",
+    "rollup": "^3.27.0",
     "tslib": "^2.5.0",
     "tsm": "^2.3.0",
     "typescript": "^5.0.2",

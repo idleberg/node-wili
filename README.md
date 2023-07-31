@@ -25,16 +25,6 @@ const options = {
   relatedLine: ['U2', 'U4', 'U6']
 };
 
-// Promise API
-wili.trafficInfoList(options)
-  .then( data => {
-    console.log(data.trafficInfos);
-  })
-  .catch( error => {
-    console.error(error);
-  });
-
-// async/await
 try {
   const data = await wili.trafficInfoList(options);
   console.log(data.trafficInfos);

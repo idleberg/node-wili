@@ -25,12 +25,7 @@ const options = {
   relatedLine: ['U2', 'U4', 'U6']
 };
 
-try {
-  const data = await wili.trafficInfoList(options);
-  console.log(data.trafficInfos);
-} catch (output) {
-  console.error(error);
-}
+const { trafficInfos } = await wili.trafficInfoList(options);
 ```
 
 :warning: Für NodeJS-Versionen unterhalb v18, muss die Klasse mit einer `fetch`-Implementierung instanziert werden.

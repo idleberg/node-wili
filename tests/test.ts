@@ -48,7 +48,7 @@ test('monitor() returns "monitors" - number[]', () => {
 		.catch();
 });
 
-test('newsList() returns "monitors" (relatedLine) - string[]', () => {
+test('newsList() returns "pois" (relatedLine) - string[]', () => {
 	return Promise.resolve(wl.newsList({ relatedLine: ['37', '38', '41', '42', '43', '44'] }))
 		.then((data) => {
 			const expected = true;
@@ -59,7 +59,7 @@ test('newsList() returns "monitors" (relatedLine) - string[]', () => {
 		.catch();
 });
 
-test('newsList() returns "monitors" (relatedLine) - number[]', () => {
+test('newsList() returns "pois" (relatedLine) - number[]', () => {
 	return Promise.resolve(wl.newsList({ relatedLine: [37, 38, 41, 42, 43, 44] }))
 		.then((data) => {
 			const expected = true;
@@ -70,7 +70,7 @@ test('newsList() returns "monitors" (relatedLine) - number[]', () => {
 		.catch();
 });
 
-test('newsList() returns "monitors" (relatedLine) - string', () => {
+test('newsList() returns "pois" (relatedLine) - string', () => {
 	return Promise.resolve(wl.newsList({ relatedLine: '37' }))
 		.then((data) => {
 			const expected = true;
@@ -81,7 +81,7 @@ test('newsList() returns "monitors" (relatedLine) - string', () => {
 		.catch();
 });
 
-test('newsList() returns "monitors" (relatedLine) - number[]', () => {
+test('newsList() returns "pois" (relatedLine) - number', () => {
 	return Promise.resolve(wl.newsList({ relatedLine: 37 }))
 		.then((data) => {
 			const expected = true;

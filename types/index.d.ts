@@ -1,12 +1,4 @@
 declare namespace Wili {
-	function createWienerLinien(
-		fetchParam?: (input: URL | RequestInfo, init?: RequestInit | undefined) => Promise<Response>,
-	): {
-		monitor(rbl: StringNumbers, options: MonitorOptions): Promise<Record<string, unknown>>;
-		newsList(options: NewsListOptions): Promise<Record<string, unknown>>;
-		trafficInfoList(options: TrafficInfoOptions): Promise<Record<string, unknown>>;
-	};
-
 	type Fetch = (input: URL | RequestInfo, init?: RequestInit | undefined) => Promise<Response>;
 	type StringNumbers = number | string | number[] | string[];
 	type UrlParams = MonitorOptions | NewsListOptions | TrafficInfoOptions;

@@ -1,3 +1,5 @@
+import type Wili from '../types/index.d.ts';
+
 /**
  * Creates an instance of the WienerLinien API client.
  * @param {function} fetchParam - The fetch function to use for making HTTP requests.

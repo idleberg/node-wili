@@ -1,6 +1,6 @@
 import { test } from 'uvu';
 import * as assert from 'uvu/assert';
-import { createWienerLinien } from '../src/index';
+import { createWienerLinien } from '../src/index.ts';
 
 const wl = createWienerLinien();
 

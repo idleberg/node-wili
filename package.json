@@ -5,10 +5,12 @@
 	"author": "Jan T. Sott",
 	"license": "MIT",
 	"type": "module",
-	"typings": "./types",
 	"exports": {
-		"import": "./lib/wili.mjs"
+		"types": "./lib/index.d.ts",
+		"import": "./lib/index.js"
 	},
+	"main": "./lib/index.cjs",
+	"types": "./lib/index.d.cts",
 	"engines": {
 		"node": ">=16.13 || >=18"
 	},
@@ -53,7 +55,7 @@
 		"publint": "^0.3.14",
 		"tsdown": "^0.15.6",
 		"tsm": "^2.3.0",
-		"typescript": "^5.1.6",
+		"typescript": "^5.9.3",
 		"uvu": "^0.5.6"
 	},
 	"lint-staged": {

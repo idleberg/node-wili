@@ -10,7 +10,7 @@ importers:
     devDependencies:
       '@commitlint/cli':
         specifier: ^20.1.0
-        version: 20.1.0(@types/node@24.8.1)(typescript@5.1.6)
+        version: 20.1.0(@types/node@24.8.1)(typescript@5.9.3)
       '@commitlint/config-conventional':
         specifier: ^20.0.0
         version: 20.0.0
@@ -28,22 +28,22 @@ importers:
         version: 9.6.0
       knip:
         specifier: ^5.65.0
-        version: 5.66.0(@types/node@24.8.1)(typescript@5.1.6)
+        version: 5.66.0(@types/node@24.8.1)(typescript@5.9.3)
       np:
         specifier: ^10.2.0
-        version: 10.2.0(@types/node@24.8.1)(typescript@5.1.6)
+        version: 10.2.0(@types/node@24.8.1)(typescript@5.9.3)
       publint:
         specifier: ^0.3.14
         version: 0.3.14
       tsdown:
         specifier: ^0.15.6
-        version: 0.15.7(oxc-resolver@11.10.0)(publint@0.3.14)(typescript@5.1.6)
+        version: 0.15.7(oxc-resolver@11.10.0)(publint@0.3.14)(typescript@5.9.3)
       tsm:
         specifier: ^2.3.0
         version: 2.3.0
       typescript:
-        specifier: ^5.1.6
-        version: 5.1.6
+        specifier: ^5.9.3
+        version: 5.9.3
       uvu:
         specifier: ^0.5.6
         version: 0.5.6
@@ -2222,8 +2222,8 @@ packages:
     resolution: {integrity: sha512-TeTSQ6H5YHvpqVwBRcnLDCBnDOHWYu7IvGbHT6N8AOymcr9PJGjc1GTtiWZTYg0NCgYwvnYWEkVChQAr9bjfwA==}
     engines: {node: '>=16'}
 
-  typescript@5.1.6:
-    resolution: {integrity: sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==}
+  typescript@5.9.3:
+    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -2388,11 +2388,11 @@ snapshots:
   '@biomejs/cli-win32-x64@2.2.6':
     optional: true
 
-  '@commitlint/cli@20.1.0(@types/node@24.8.1)(typescript@5.1.6)':
+  '@commitlint/cli@20.1.0(@types/node@24.8.1)(typescript@5.9.3)':
     dependencies:
       '@commitlint/format': 20.0.0
       '@commitlint/lint': 20.0.0
-      '@commitlint/load': 20.1.0(@types/node@24.8.1)(typescript@5.1.6)
+      '@commitlint/load': 20.1.0(@types/node@24.8.1)(typescript@5.9.3)
       '@commitlint/read': 20.0.0
       '@commitlint/types': 20.0.0
       tinyexec: 1.0.1
@@ -2439,15 +2439,15 @@ snapshots:
       '@commitlint/rules': 20.0.0
       '@commitlint/types': 20.0.0
 
-  '@commitlint/load@20.1.0(@types/node@24.8.1)(typescript@5.1.6)':
+  '@commitlint/load@20.1.0(@types/node@24.8.1)(typescript@5.9.3)':
     dependencies:
       '@commitlint/config-validator': 20.0.0
       '@commitlint/execute-rule': 20.0.0
       '@commitlint/resolve-extends': 20.1.0
       '@commitlint/types': 20.0.0
       chalk: 5.6.2
-      cosmiconfig: 9.0.0(typescript@5.1.6)
-      cosmiconfig-typescript-loader: 6.2.0(@types/node@24.8.1)(cosmiconfig@9.0.0(typescript@5.1.6))(typescript@5.1.6)
+      cosmiconfig: 9.0.0(typescript@5.9.3)
+      cosmiconfig-typescript-loader: 6.2.0(@types/node@24.8.1)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -3056,30 +3056,30 @@ snapshots:
       meow: 12.1.1
       split2: 4.2.0
 
-  cosmiconfig-typescript-loader@6.2.0(@types/node@24.8.1)(cosmiconfig@9.0.0(typescript@5.1.6))(typescript@5.1.6):
+  cosmiconfig-typescript-loader@6.2.0(@types/node@24.8.1)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3):
     dependencies:
       '@types/node': 24.8.1
-      cosmiconfig: 9.0.0(typescript@5.1.6)
+      cosmiconfig: 9.0.0(typescript@5.9.3)
       jiti: 2.6.1
-      typescript: 5.1.6
+      typescript: 5.9.3
 
-  cosmiconfig@8.3.6(typescript@5.1.6):
+  cosmiconfig@8.3.6(typescript@5.9.3):
     dependencies:
       import-fresh: 3.3.0
       js-yaml: 4.1.0
       parse-json: 5.2.0
       path-type: 4.0.0
     optionalDependencies:
-      typescript: 5.1.6
+      typescript: 5.9.3
 
-  cosmiconfig@9.0.0(typescript@5.1.6):
+  cosmiconfig@9.0.0(typescript@5.9.3):
     dependencies:
       env-paths: 2.2.1
       import-fresh: 3.3.0
       js-yaml: 4.1.0
       parse-json: 5.2.0
     optionalDependencies:
-      typescript: 5.1.6
+      typescript: 5.9.3
 
   cross-spawn@7.0.3:
     dependencies:
@@ -3589,7 +3589,7 @@ snapshots:
 
   kleur@4.1.5: {}
 
-  knip@5.66.0(@types/node@24.8.1)(typescript@5.1.6):
+  knip@5.66.0(@types/node@24.8.1)(typescript@5.9.3):
     dependencies:
       '@nodelib/fs.walk': 1.2.8
       '@types/node': 24.8.1
@@ -3603,7 +3603,7 @@ snapshots:
       picomatch: 4.0.3
       smol-toml: 1.4.2
       strip-json-comments: 5.0.2
-      typescript: 5.1.6
+      typescript: 5.9.3
       zod: 4.1.12
 
   ky@1.12.0: {}
@@ -3798,11 +3798,11 @@ snapshots:
       semver: 7.7.3
       validate-npm-package-license: 3.0.4
 
-  np@10.2.0(@types/node@24.8.1)(typescript@5.1.6):
+  np@10.2.0(@types/node@24.8.1)(typescript@5.9.3):
     dependencies:
       chalk: 5.6.2
       chalk-template: 1.1.2
-      cosmiconfig: 8.3.6(typescript@5.1.6)
+      cosmiconfig: 8.3.6(typescript@5.9.3)
       del: 8.0.1
       escape-goat: 4.0.0
       escape-string-regexp: 5.0.0
@@ -4081,7 +4081,7 @@ snapshots:
 
   reusify@1.0.4: {}
 
-  rolldown-plugin-dts@0.16.12(oxc-resolver@11.10.0)(rolldown@1.0.0-beta.43)(typescript@5.1.6):
+  rolldown-plugin-dts@0.16.12(oxc-resolver@11.10.0)(rolldown@1.0.0-beta.43)(typescript@5.9.3):
     dependencies:
       '@babel/generator': 7.28.3
       '@babel/parser': 7.28.4
@@ -4094,7 +4094,7 @@ snapshots:
       magic-string: 0.30.19
       rolldown: 1.0.0-beta.43
     optionalDependencies:
-      typescript: 5.1.6
+      typescript: 5.9.3
     transitivePeerDependencies:
       - oxc-resolver
       - supports-color
@@ -4288,7 +4288,7 @@ snapshots:
 
   tree-kill@1.2.2: {}
 
-  tsdown@0.15.7(oxc-resolver@11.10.0)(publint@0.3.14)(typescript@5.1.6):
+  tsdown@0.15.7(oxc-resolver@11.10.0)(publint@0.3.14)(typescript@5.9.3):
     dependencies:
       ansis: 4.2.0
       cac: 6.7.14
@@ -4298,7 +4298,7 @@ snapshots:
       empathic: 2.0.0
       hookable: 5.5.3
       rolldown: 1.0.0-beta.43
-      rolldown-plugin-dts: 0.16.12(oxc-resolver@11.10.0)(rolldown@1.0.0-beta.43)(typescript@5.1.6)
+      rolldown-plugin-dts: 0.16.12(oxc-resolver@11.10.0)(rolldown@1.0.0-beta.43)(typescript@5.9.3)
       semver: 7.7.3
       tinyexec: 1.0.1
       tinyglobby: 0.2.15
@@ -4306,7 +4306,7 @@ snapshots:
       unconfig: 7.3.3
     optionalDependencies:
       publint: 0.3.14
-      typescript: 5.1.6
+      typescript: 5.9.3
     transitivePeerDependencies:
       - '@ts-macro/tsc'
       - '@typescript/native-preview'
@@ -4332,7 +4332,7 @@ snapshots:
 
   type-fest@4.41.0: {}
 
-  typescript@5.1.6: {}
+  typescript@5.9.3: {}
 
   unconfig@7.3.3:
     dependencies:

@@ -1,44 +1,60 @@
 name: CI
 
-on: [push]
+on:
+  push:
+    paths:
+    - '.github/**'
+    - 'src/**'
+    - 'tests/**'
+    - 'package.json'
+    - 'pnpm-lock.yaml'
+    - 'tsconfig.json'
+  pull_request:
+    paths:
+    - '.github/**'
+    - 'src/**'
+    - 'tests/**'
+    - 'package.json'
+    - 'pnpm-lock.yaml'
+    - 'tsconfig.json'
+  workflow_dispatch:
 
 jobs:
   default:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node-version: ['lts/*', '*']
+        node-version: ['*', 'lts/*']
         os: [ubuntu-latest]
 
     steps:
-    - uses: actions/checkout@v3
-      with:
-        fetch-depth: 1
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 1
 
-    - uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
+      - name: Cache pnpm modules
+        uses: actions/cache@v4
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-
 
-    - name: Cache pnpm modules
-      uses: actions/cache@v3
-      with:
-        path: ~/.pnpm-store
-        key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
-        restore-keys: |
-          ${{ runner.os }}-
+      - uses: pnpm/action-setup@v4
+        with:
+          run_install: |
+            - recursive: true
+            - args: [--frozen-lockfile, --strict-peer-dependencies]
 
-    - uses: pnpm/action-setup@v2
-      with:
-        version: 6
-        run_install: |
-          - recursive: true
-          - args: [--frozen-lockfile, --strict-peer-dependencies]
+      - uses: actions/setup-node@v5
+        with:
+          node-version: ${{ matrix.node-version }}
 
-    - name: Lint Source
-      run: pnpm run lint --if-present
+      - name: Lint Source
+        run: pnpm exec biome ci
 
-    - name: Build Source
-      run: pnpm run build --if-present
+      - name: Build Source
+        run: pnpm run --if-present build
 
-    - name: Run Tests
-      run: pnpm run test --if-present
+      - name: Test Source
+        run: pnpm run --if-present test

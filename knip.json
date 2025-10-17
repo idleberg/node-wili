@@ -1,0 +1,4 @@
+{
+	"project": ["**/*.ts"],
+	"ignoreDependencies": ["package.json", "glob"]
+}

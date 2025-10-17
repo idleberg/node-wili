@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/github/license/idleberg/node-wili?color=blue&style=for-the-badge)](https://github.com/idleberg/node-wili/blob/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/wili?style=for-the-badge)](https://www.npmjs.org/package/wili)
-[![Build](https://img.shields.io/github/actions/workflow/status/idleberg/node-wili/default.yml?style=for-the-badge)](https://github.com/idleberg/node-wili/actions)
+![GitHub branch check runs](https://img.shields.io/github/check-runs/idleberg/node-wili/main?style=for-the-badge)
 
 [English](README.md) | **Deutsch**
 

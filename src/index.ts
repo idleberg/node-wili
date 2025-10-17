@@ -17,13 +17,13 @@ export function createWienerLinien(fetchParam = globalThis.fetch) {
 	 * @param {Object} options - The monitor options.
 	 * @returns {Promise<Object>} - The real-time data for the station.
 	 */
-	async function monitor(rbl: Wili.StringNumbers, options = {}) {
+	async function monitor(rbl: Wili.StringNumbers, options = {}): Promise<Wili.MonitorResponse> {
 		const urlParams: Wili.MonitorParams = {
 			...options,
 			rbl: rbl,
 		};
 
-		return await apiCall('/monitor', urlParams);
+		return (await apiCall('/monitor', urlParams)) as Wili.MonitorResponse;
 	}
 
 	/**
@@ -31,8 +31,8 @@ export function createWienerLinien(fetchParam = globalThis.fetch) {
 	 * @param {Object} options - The news list options.
 	 * @returns {Promise<Object>} - The news and information.
 	 */
-	async function newsList(options = {}) {
-		return await apiCall('newsList', options);
+	async function newsList(options = {}): Promise<Wili.NewsListResponse> {
+		return (await apiCall('newsList', options)) as Wili.NewsListResponse;
 	}
 
 	/**
@@ -40,8 +40,8 @@ export function createWienerLinien(fetchParam = globalThis.fetch) {
 	 * @param {Object} options - The traffic info options.
 	 * @returns {Promise<Object>} - The traffic information.
 	 */
-	async function trafficInfoList(options = {}) {
-		return await apiCall('trafficInfoList', options);
+	async function trafficInfoList(options = {}): Promise<Wili.TrafficInfoListResponse> {
+		return (await apiCall('trafficInfoList', options)) as Wili.TrafficInfoListResponse;
 	}
 
 	/**
@@ -76,7 +76,7 @@ export function createWienerLinien(fetchParam = globalThis.fetch) {
 		if (response.ok) {
 			return response;
 		} else {
-			throw new Error(response.statusText);
+			throw new Error(`HTTP ${response.status}: ${response.statusText} (${response.url})`);
 		}
 	}
 
@@ -89,14 +89,11 @@ export function createWienerLinien(fetchParam = globalThis.fetch) {
 	async function apiCall(urlPath: string, urlParams: Wili.UrlParams) {
 		const url = buildUrl(urlPath, urlParams);
 
-		try {
-			const response = await fetchParam(url.href);
-			const checkedResponse = await checkStatus(response);
-			const json = await checkedResponse.json();
-			return json.data;
-		} catch (error) {
-			console.error(error);
-		}
+		const response = await fetchParam(url.href);
+		const checkedResponse = await checkStatus(response);
+		const json = (await checkedResponse.json()) as { data: unknown };
+
+		return json.data;
 	}
 
 	return {

@@ -22,6 +22,21 @@ declare namespace Wili {
 		relatedLine?: StringNumbers;
 		relatedStop?: StringNumbers;
 	};
+
+	type MonitorResponse = {
+		monitors: unknown[];
+		[key: string]: unknown;
+	};
+
+	type NewsListResponse = {
+		pois: unknown[];
+		[key: string]: unknown;
+	};
+
+	type TrafficInfoListResponse = {
+		trafficInfos: unknown[];
+		[key: string]: unknown;
+	};
 }
 
 export default Wili;

@@ -92,7 +92,7 @@ Train or bus number, e.g. U1, S7, 59A (case-insensitive).
 
 ##### `options.relatedStop`
 
-Type: `String`, `Integer`, `Array`.
+Type: `String`, `Integer`, `Array`
 
 Station ID.
 

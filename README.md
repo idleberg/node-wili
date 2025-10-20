@@ -6,7 +6,7 @@
 
 **English** | [Deutsch](README.de.md)
 
-A Node wrapper for the Wiener Linien public transport API
+A Node wrapper for the Wiener Linien public transport API.
 
 ## Installation
 
@@ -42,19 +42,19 @@ Returns real-time data for a station, including train information such as identi
 
 Type: `String`, `Integer`, `Array`
 
-RBL number (Rechnergestütztes Betriebsleitsystem - computer-aided operations control system), can be found this [website](https://till.mabe.at/rbl/?line=214433687&station=231116899)
+RBL number (Rechnergestütztes Betriebsleitsystem - computer-aided operations control system), can be found this [website](https://till.mabe.at/rbl/?line=214433687&station=231116899).
 
 ##### `options.activeTrafficInfo`
 
 Type: `String`, `Array`
 
-Disruption type (`stoerungkurz`, `stoerunglang`, or `aufzugsinfo`)
+Disruption type (`stoerungkurz`, `stoerunglang`, or `aufzugsinfo`).
 
 ### newsList
 
 Usage: `newsList(options)`
 
-Returns news, elevator maintenance and other information
+Returns news, elevator maintenance and other information.
 
 #### Options
 
@@ -62,25 +62,25 @@ Returns news, elevator maintenance and other information
 
 Type: `String`, `Integer`, `Array`
 
-Train or bus number, e.g. U1, S7, 59A (case-insensitive)
+Train or bus number, e.g. U1, S7, 59A (case-insensitive).
 
 ##### `options.relatedStop`
 
 Type: `String`, `Integer`, `Array`
 
-Station ID
+Station ID.
 
 ##### `options.name`
 
 Type: `String`, `Array`
 
-Information category, e.g `news` or `aufzugsservice`
+Information category, e.g `news` or `aufzugsservice`.
 
 ### trafficInfoList
 
 Usage: `trafficInfoList([options])`
 
-Returns interruption of operations and elevator outage
+Returns interruption of operations and elevator outage.
 
 #### Options
 
@@ -88,20 +88,20 @@ Returns interruption of operations and elevator outage
 
 Type: `String`, `Integer`, `Array`
 
-Train or bus number, e.g. U1, S7, 59A (case-insensitive)
+Train or bus number, e.g. U1, S7, 59A (case-insensitive).
 
 ##### `options.relatedStop`
 
-Type: `String`, `Integer`, `Array`
+Type: `String`, `Integer`, `Array`.
 
-Station ID
+Station ID.
 
 ##### `options.name`
 
 Type: `String`, `Array`
 
-Disruption type (`stoerungkurz`, `stoerunglang`, or `aufzugsinfo`)
+Disruption type (`stoerungkurz`, `stoerunglang`, or `aufzugsinfo`).
 
 ## License
 
-This work is licensed under [The MIT License](https://opensource.org/licenses/MIT)
+This work is licensed under [The MIT License](https://opensource.org/licenses/MIT).

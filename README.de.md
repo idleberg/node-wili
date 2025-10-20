@@ -6,7 +6,7 @@
 
 [English](README.md) | **Deutsch**
 
-Node Wrapper für die Echtzeitdaten-API der Wiener Linien
+Node Wrapper für die Echtzeitdaten-API der Wiener Linien.
 
 ## Installation
 
@@ -34,7 +34,7 @@ const { trafficInfos } = await wili.trafficInfoList(options);
 
 Verwendung: `monitor(rbl, [options])`
 
-Die Monitor Schnittstelle liefert Echtzeiten oder Planzeiten der nächsten 70 Minuten für einen Haltepunkt
+Die Monitor Schnittstelle liefert Echtzeiten oder Planzeiten der nächsten 70 Minuten für einen Haltepunkt.
 
 #### Parameter:
 
@@ -42,19 +42,19 @@ Die Monitor Schnittstelle liefert Echtzeiten oder Planzeiten der nächsten 70 M
 
 Typen: `String`, `Integer`, `Array`
 
-RBL Nummer (Rechnergestütztes Betriebsleitsystem), lässt sich [hier](https://till.mabe.at/rbl/?line=214433687&station=231116899) abfragen
+RBL Nummer (Rechnergestütztes Betriebsleitsystem), lässt sich [hier](https://till.mabe.at/rbl/?line=214433687&station=231116899) abfragen.
 
 ##### `options.activeTrafficInfo`
 
 Typen: `String`, `Array`
 
-Störungstypen: `stoerungkurz`, `stoerunglang` oder `aufzugsinfo`
+Störungstypen: `stoerungkurz`, `stoerunglang` oder `aufzugsinfo`.
 
 ### newsList
 
 Verwendung: `newsList(options)`
 
-Die Schnittstelle liefert Neuigkeiten wie „Aktuelles“ oder „Aufzugswartungen”
+Die Schnittstelle liefert Neuigkeiten wie „Aktuelles“ oder „Aufzugswartungen”.
 
 #### Optionen
 
@@ -62,25 +62,25 @@ Die Schnittstelle liefert Neuigkeiten wie „Aktuelles“ oder „Aufzugswartung
 
 Typen: `String`, `Integer`, `Array`
 
-Name der Linie, z.B. U1, S7, 59A (schreibungsunabhängig)
+Name der Linie, z.B. U1, S7, 59A (schreibungsunabhängig).
 
 ##### `options.relatedStop`
 
 Typen: `String`, `Integer`, `Array`
 
-Haltepunkt ID der Haltestelle
+Haltepunkt ID der Haltestelle.
 
 ##### `options.name`
 
 Typen: `String`, `Array`
 
-Name der Nachrichtenkategorie, z.B `news` oder `aufzugsservice`
+Name der Nachrichtenkategorie, z.B `news` oder `aufzugsservice`.
 
 ### trafficInfoList
 
 Verwendung: `trafficInfoList([options])`
 
-Die Schnittstelle liefert Störungen
+Die Schnittstelle liefert Störungen.
 
 #### Optionen
 
@@ -88,24 +88,20 @@ Die Schnittstelle liefert Störungen
 
 Typen: `String`, `Integer`, `Array`
 
-Name der Linie, z.B. U1, S7, 59A (schreibungsunabhängig)
+Name der Linie, z.B. U1, S7, 59A (schreibungsunabhängig).
 
 ##### `options.relatedStop`
 
 Typen: `String`, `Integer`, `Array`
 
-Haltepunkt ID der Haltestelle
+Haltepunkt ID der Haltestelle.
 
 ##### `options.name`
 
 Typen: `String`, `Array`
 
-Störungstypen: `stoerungkurz`, `stoerunglang` oder `aufzugsinfo`
+Störungstypen: `stoerungkurz`, `stoerunglang` oder `aufzugsinfo`.
 
 ## Lizenz
 
-Diese Software unterliegt den Bestimmungen der [MIT Lizenz](https://opensource.org/licenses/MIT)
-
-## Spenden
-
-Wenn Du mir einen Kaffee oder ein Bier ausgeben möchtest, freue mich über Spenden via [Flattr](https://flattr.com/submit/auto?user_id=idleberg&url=https://github.com/idleberg/node-wili) oder Bitcoin `17CXJuPsmhuTzFV2k4RKYwpEHVjskJktRd`
+Diese Software unterliegt den Bestimmungen der [MIT Lizenz](https://opensource.org/licenses/MIT).

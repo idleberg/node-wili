@@ -2,9 +2,9 @@ import type Wili from '../types/index.d.ts';
 
 /**
  * Creates an instance of the WienerLinien API client.
- * @param {function} fetchParam - The fetch function to use for making HTTP requests.
- * @throws {TypeError} - If the supplied fetch parameter is not a function.
- * @returns {Object} - The WienerLinien API client.
+ * @param fetchParam The fetch function to use for making HTTP requests.
+ * @returns The WienerLinien API client.
+ * @throws If the supplied fetch parameter is not a function.
  */
 export function createWienerLinien(fetchParam = globalThis.fetch) {
 	if (typeof fetchParam !== 'function') {
@@ -13,9 +13,9 @@ export function createWienerLinien(fetchParam = globalThis.fetch) {
 
 	/**
 	 * Returns real-time data for a station.
-	 * @param {string} rbl - The RBL number.
-	 * @param {Object} options - The monitor options.
-	 * @returns {Promise<Object>} - The real-time data for the station.
+	 * @param rbl The RBL number.
+	 * @param options The monitor options.
+	 * @returns The real-time data for the station.
 	 */
 	async function monitor(rbl: Wili.StringNumbers, options = {}): Promise<Wili.MonitorResponse> {
 		const urlParams: Wili.MonitorParams = {
@@ -28,8 +28,8 @@ export function createWienerLinien(fetchParam = globalThis.fetch) {
 
 	/**
 	 * Returns news, elevator maintenance, and other information.
-	 * @param {Object} options - The news list options.
-	 * @returns {Promise<Object>} - The news and information.
+	 * @param options The news list options.
+	 * @returns The news and information.
 	 */
 	async function newsList(options = {}): Promise<Wili.NewsListResponse> {
 		return (await apiCall('newsList', options)) as Wili.NewsListResponse;
@@ -37,8 +37,8 @@ export function createWienerLinien(fetchParam = globalThis.fetch) {
 
 	/**
 	 * Returns interruptions of operations and elevator outages.
-	 * @param {Object} options - The traffic info options.
-	 * @returns {Promise<Object>} - The traffic information.
+	 * @param options The traffic info options.
+	 * @returns The traffic information.
 	 */
 	async function trafficInfoList(options = {}): Promise<Wili.TrafficInfoListResponse> {
 		return (await apiCall('trafficInfoList', options)) as Wili.TrafficInfoListResponse;
@@ -46,9 +46,9 @@ export function createWienerLinien(fetchParam = globalThis.fetch) {
 
 	/**
 	 * Builds the URL for making API requests.
-	 * @param {string} urlPath - The URL path.
-	 * @param {Object} urlParams - The URL parameters.
-	 * @returns {URL} - The constructed URL.
+	 * @param urlPath The URL path.
+	 * @param urlParams The URL parameters.
+	 * @returns The constructed URL.
 	 */
 	function buildUrl(urlPath: string, urlParams: Wili.UrlParams) {
 		const searchParams = new URLSearchParams();
@@ -68,9 +68,9 @@ export function createWienerLinien(fetchParam = globalThis.fetch) {
 
 	/**
 	 * Checks the response status and throws an error if it's not OK.
-	 * @param {Response} response - The HTTP response.
-	 * @returns {Promise<Response>} - The resolved response if the status is OK.
-	 * @throws {Error} - If the response status is not OK.
+	 * @param response - The HTTP response.
+	 * @returns The resolved response if the status is OK.
+	 * @throws If the response status is not OK.
 	 */
 	async function checkStatus(response: Response) {
 		if (response.ok) {
@@ -82,9 +82,9 @@ export function createWienerLinien(fetchParam = globalThis.fetch) {
 
 	/**
 	 * Makes an API call to the specified URL path with the given parameters.
-	 * @param {string} urlPath - The URL path.
-	 * @param {Object} urlParams - The URL parameters.
-	 * @returns {Promise<Object>} - The API response data.
+	 * @param urlPath The URL path.
+	 * @param urlParams The URL parameters.
+	 * @returns The API response data.
 	 */
 	async function apiCall(urlPath: string, urlParams: Wili.UrlParams) {
 		const url = buildUrl(urlPath, urlParams);

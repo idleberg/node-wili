@@ -28,17 +28,6 @@ const options = {
 const { trafficInfos } = await wili.trafficInfoList(options);
 ```
 
-:warning: Für NodeJS-Versionen unterhalb v18, muss die Klasse mit einer `fetch`-Implementierung instanziert werden.
-
-**Beispiel**
-
-```js
-import { createWienerLinien } from 'wili';
-import fetch from 'isomorphic-fetch';
-
-const wili = createWienerLinien(fetch);
-```
-
 ## API
 
 ### monitor

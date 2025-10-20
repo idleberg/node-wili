@@ -11,6 +11,10 @@ export function createWienerLinien(fetchParam = globalThis.fetch) {
 		throw new TypeError('The supplied fetch parameter is not a function');
 	}
 
+	if (fetchParam !== globalThis.fetch) {
+		console.warn('Providing a custom fetch implementation is deprecated and will be removed in future versions.');
+	}
+
 	/**
 	 * Returns real-time data for a station.
 	 * @param rbl The RBL number.

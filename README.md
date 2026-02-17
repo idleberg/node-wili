@@ -25,7 +25,7 @@ const options = {
   relatedLine: ['U2', 'U4', 'U6']
 };
 
- const { trafficInfos } = await wili.trafficInfoList(options);
+const { trafficInfos } = await wili.trafficInfoList(options);
 ```
 
 ## API
